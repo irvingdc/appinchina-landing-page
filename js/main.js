@@ -43,7 +43,14 @@ var loading = false;
 })()
 
 function loadPage(){
-	pagesList.forEach((it)=>{ find("#"+it) ? find("#"+it).classList.remove("hidden") : null})
+	window.scrollTo(0,0)
+	pagesList.forEach((it)=>{ 
+		el = find("#"+it)
+		if(el){
+			el.classList.remove("hidden")
+			if(it == "market") setTimeout(()=>{createAllCharts()},500)
+		}
+	})
 	setTimeout(()=>{ pagesList.forEach((it)=>{ find("#"+it) ? find("#"+it).classList.remove("invisible") : null }) },500)
 }
 

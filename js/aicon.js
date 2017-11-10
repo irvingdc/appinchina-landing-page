@@ -50,7 +50,8 @@ function searchInStore(index,app){
 	  		catch(err){}
 	    }
 	}
-	xhttp.open("GET", "https://www.appinchina.co/aicon/newSearchers/search"+index+".php?app="+app, true)
+	let timestamp = new Date().getTime()
+	xhttp.open("GET", "https://www.appinchina.co/aicon/newSearchers/search"+index+".php?app="+app+"&timestamp="+timestamp, true)
 	xhttp.send()
 	setTimeout(()=>{ xhttp.abort() },35000)
 }
