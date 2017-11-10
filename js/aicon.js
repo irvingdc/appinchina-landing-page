@@ -1,10 +1,16 @@
-var storesFound = 0
-var totalDownloads = 0
-var aiconLoading = false
-const timeLimit = 35000
+var storesFound = 0;
+var totalDownloads = 0;
+var aiconLoading = false;
+const timeLimit = 35000;
+
+(()=>{
+	let app = getUrlParameter("app")
+	if(app) aiconSearch(app)
+})();
 
 function aiconSearch(app){
 	aiconLoading = true
+	history.pushState(null, null, '?app='+app)
 	show(find("#aicon .results"))
 	show(find("#loader"))
 	hide(find("#searchAiconForm"))
@@ -18,6 +24,13 @@ function aiconSearch(app){
 		if(!storesFound) show(find("#zeroResults"))
 	}, timeLimit)
 }
+
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
 
 function searchInStore(index,app){
 	var xhttp = new XMLHttpRequest()
