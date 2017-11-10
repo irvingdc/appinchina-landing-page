@@ -565,6 +565,15 @@ div#aicon div#aiconForm .content{
 	padding: 70px 20px 80px;
 	background: #ebebeb;
 }
+div#aicon div#zeroResults{
+	width: 300px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 15px;
+    color: gray;
+    font-size: 17px;
+    background: whitesmoke;
+}
 
 /*************************** ABOUT US ***********************/
 div#about > div:first-child {

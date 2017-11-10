@@ -1,6 +1,7 @@
 var storesFound = 0
 var totalDownloads = 0
 var aiconLoading = false
+const timeLimit = 35000
 
 function aiconSearch(app){
 	aiconLoading = true
@@ -13,9 +14,9 @@ function aiconSearch(app){
 		searchInStore(i,app)
 	}
 	setTimeout(()=>{
-		hide(find("#loader")) 
-		if(!totalDownloads) show(find("#zeroResults"))
-	},35000)
+		hide(find("#loader"))
+		if(!storesFound) show(find("#zeroResults"))
+	}, timeLimit)
 }
 
 function searchInStore(index,app){
@@ -53,5 +54,5 @@ function searchInStore(index,app){
 	let timestamp = new Date().getTime()
 	xhttp.open("GET", "https://www.appinchina.co/aicon/newSearchers/search"+index+".php?app="+app+"&timestamp="+timestamp, true)
 	xhttp.send()
-	setTimeout(()=>{ xhttp.abort() },35000)
+	setTimeout(()=>{ xhttp.abort() }, timeLimit)
 }
