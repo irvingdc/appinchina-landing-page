@@ -30,7 +30,7 @@ function getUrlParameter(name) {
     var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
     var results = regex.exec(location.search);
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-};
+}
 
 function searchInStore(index,app){
 	var xhttp = new XMLHttpRequest()

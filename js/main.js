@@ -102,7 +102,7 @@ function sendForm(form){
 	let email = formElement.querySelector("input[name='email']")
 	let message = formElement.querySelector("textarea") ? formElement.querySelector("textarea") : null
 	let phone = formElement.querySelector("input[name='phone']") ? formElement.querySelector("input[name='phone']") : null
-	let information = find("#"+form+"").querySelector("p.information")
+	let information = find("p#confirmation")
 
 	var xhttp = new XMLHttpRequest()
 	var data = new FormData()
@@ -124,6 +124,14 @@ function sendForm(form){
 	      		show(information)
 	      		setTimeout(()=>{hide(information)},7000)
 	      		handleFormSubmission(form)
+	      	}
+	      	else if(response == "test"){
+	      		name.value = ""
+	      		email.value = ""
+	      		message ? message.value = "" : null
+	      		phone ? phone.value = "" : null
+	      		show(information)
+	      		setTimeout(()=>{hide(information)},7000)
 	      	}
 	    }
 	}
