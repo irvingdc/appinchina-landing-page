@@ -4,6 +4,7 @@ var navDisplayed = false;
 var loading = false;
 
 (()=>{
+	console.log("hey :)")
 	let home = document.querySelector("#home .welcome-page")
 	home ? home.style.height = (window.innerHeight - 170).toString() + "px" : null
 
@@ -41,6 +42,10 @@ var loading = false;
     loadPage()
 
 })()
+
+function hideMessage(){
+	hide(find("p#confirmation"))
+}
 
 function loadPage(){
 	window.scrollTo(0,0)
@@ -124,7 +129,7 @@ function sendForm(form){
 	      		message ? message.value = "" : null
 	      		phone ? phone.value = "" : null
 	      		show(information)
-	      		setTimeout(()=>{hide(information)},10000)
+	      		setTimeout(()=>{hide(information)},20000)
 	      		handleFormSubmission(form)
 	      	}
 	      	else if(response == "test"){
@@ -133,7 +138,7 @@ function sendForm(form){
 	      		message ? message.value = "" : null
 	      		phone ? phone.value = "" : null
 	      		show(information)
-	      		setTimeout(()=>{hide(information)},10000)
+	      		setTimeout(()=>{hide(information)},20000)
 	      	}
 	    }
 	}
@@ -148,9 +153,9 @@ function sendForm(form){
 }
 
 function createAllCharts(){
-	createChart("chartA", [54.3, 46.7], ["Users (54.3% = 760million)", "Non-Users (45.7% = 640million)"])
-    createChart("chartB", [54, 44.06, 1.94], ["Mobile Phones (54% = 410.5million)", "Desktop (44.06% = 334.8million)", "Tablet (1.94% = 14.7million)"])
-    createChart("chartC", [78.35, 20.71, 0.94], ["Android (78.35% = 321.6million)", "iOS (20.71% = 85million)", "Other (0.94% = 3.9million)"])
+	createChart("chartA", [54.3, 46.7], ["Users ( 760million )", "Non-Users ( 640million )"])
+    createChart("chartB", [54, 44.06, 1.94], ["Mobile Phones ( > 410.5million )", "Desktop ( > 334.8million )", "Tablet ( > 14.7million )"])
+    createChart("chartC", [78.35, 20.71, 0.94], ["Android ( > 321.6million )", "iOS ( > 85million )", "Other ( > 3.9million )"])
     chartsCreated = true
 }
 

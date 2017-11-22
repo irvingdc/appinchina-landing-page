@@ -1,41 +1,44 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" manifest="/manifest.appcache">
 <head>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" type="text/css" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/css/main_2.css" />
 	<link rel="shortcut icon" href="/images/logo.png"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  	<meta name="description" content="AppInChina helps companies and start-ups launch their apps into the fast-growing Chinese mobile app market." />
-	<title>AppInChina | Bring your app to China</title>
+  	<meta name="description" content="AppInChina helps established companies and individual app developers publish their innovative apps on the top 20 Android app stores in China." />
+	<title>AppInChina | Contact Us</title>
 </head>
 <body>
 	<nav>
 		<span class="open-nav-button" onclick="toggleNav()"></span>
 		<img src="/images/greenLogo.png" alt="Company logo">
-		<ul>
-			<li>
-				<a href="/" class="action-redirect">Homepage</a>
-			</li>
-			<li>
-				<a href="/blog" class="action-redirect">Info Hub</a>
-			</li>
-			<li>
-				<a href="/market/market.html" class="action-redirect">The Market</a>
-			</li>
-			<li>
-				<a href="/aicon" class="action-redirect">AppInChina?</a>
-			</li>
-			<li>
-				<a href="/about" class="action-redirect">About Us</a>
-			</li>
-			<li>
-				<a href="/contact" class="contact action-redirect">Contact Us</a>
-			</li>
-		</ul>
 	</nav>
+	<ul>
+		<li>
+			<a href="/" class="action-redirect">Homepage</a>
+		</li>
+		<li>
+			<a href="/blog" class="action-redirect">Info Hub</a>
+		</li>
+		<li>
+			<a href="/market" class="action-redirect">The Market</a>
+		</li>
+		<li>
+			<a href="/aicon" class="action-redirect">AppInChina?</a>
+		</li>
+		<li>
+			<a href="/about" class="action-redirect">About Us</a>
+		</li>
+		<li>
+			<a href="/contact" class="contact action-redirect">Contact Us</a>
+		</li>
+	</ul>
 	<div class="gray-filter overlay hidden invisible"></div>
-	<p class="hidden invisible" id="confirmation">We got your message and will contact you back in less than 48 hours</p>
-	<div id="contact" class="hidden invisible">
+	<p class="hidden invisible" id="confirmation">
+		<span>We got your message and will contact you back within 2 working days.</span>
+		<img src="/images/close-white.png" onclick="hideMessage()"/>
+	</p>
+	<div id="contact">
 		<div id="contactForm" class="white-color welcome-page">
 			<div class="parallax"></div>
 			<div class="flex content gray-filter">
@@ -44,12 +47,12 @@
 						<h1>Contact Us</h1>
 					</div>
 					<p> Have a project we can help you with?<br/>
-						Contact us now for a free consultation. Simply fill out the form below, and we’ll contact you within 48 hours.</p>
+						Contact us now for a free consultation. Simply fill out the form below, and we’ll contact you within 2 working days.</p>
 					<div class="flex top">
 						<form class="vertical-form align-left" onsubmit="return sendForm('contactForm')">
 							<input type="text" name="name" placeholder="Name" required>
 							<input type="email" name="email" placeholder="Email" required>
-							<input type="text" name="phone" placeholder="Phone">
+							<input type="text" name="phone" placeholder="Phone" required>
 							<textarea id="message" placeholder="Message"></textarea>
 							<button type="submit">Submit</button>
 						</form>
@@ -68,7 +71,7 @@
 							</span>
 						</div>
 					</div>
-					<p class="information hidden invisible">We got your message and will contact you back in less than 48 hours</p>
+					<p class="information hidden invisible">We got your message and will contact you back within 2 working days.</p>
 				</div>
 			</div>
 					
@@ -90,28 +93,8 @@
 			<a href="/privacy-policy" class="action-redirect">Privacy Policy</a>
 		</p>
 	</footer>
-	<script src="/js/chart.js"></script>
-	<script src="/js/main.js"></script>
-	<!--
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-2213742-7', 'auto');
-	  ga('send', 'pageview');
-	window._mfq = window._mfq || [];
-	    (function() {
-	        var mf = document.createElement("script");
-	        mf.type = "text/javascript"; mf.async = true;
-	        mf.src = "//cdn.mouseflow.com/projects/e6bc91a0-14ab-40f7-a817-e4c1d90b7e24.js";
-	        document.getElementsByTagName("head")[0].appendChild(mf);
-	    })();
-	  console.log(":)");
-	</script>
-	<script type="text/javascript" id="SW-05b84440-4b11-4377-9c0a-8996bbf42fea"></script><script> !function(){function a(){var a=document.createElement("script");a.type="text/javascript",a.async=1,a.src="//go.saleswingsapp.com/assets/javascripts/sw/05b84440-4b11-4377-9c0a-8996bbf42fea?enableFormTracker=true";var b=document.getElementById("SW-05b84440-4b11-4377-9c0a-8996bbf42fea");b.parentNode.insertBefore(a,b)}window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,0);window.attachEvent?window.attachEvent("onhashchange",a):window.addEventListener("hashchange",a,0);}();</script>
-	-->
-
-
+	<script type="text/javascript" id="SW-05b84440-4b11-4377-9c0a-8996bbf42fea"></script>
+	<script src="/js/main_2.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/fonts.css" async/>
 </body>
 </html>

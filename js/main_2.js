@@ -7,18 +7,6 @@ var loading = false;
 	let home = document.querySelector("#home .welcome-page")
 	home ? home.style.height = (window.innerHeight - 170).toString() + "px" : null
 
-	document.querySelectorAll("a.action-redirect").forEach((it)=>{
-		it.addEventListener("click", (event)=>{
-	        event.preventDefault()
-	        hideNav()
-	        var el = event.target
-	        while(el.tagName.toUpperCase() != "A" && el.parentElement){
-	        	el = el.parentElement
-	        }
-			openPage(el.getAttribute("href"))
-        }, false)
-    })
-
     document.querySelectorAll("form").forEach((it)=>{
 		it.addEventListener("submit", (event)=>{
 	        event.preventDefault()
@@ -28,37 +16,20 @@ var loading = false;
 	        }
         }, false)
     })
-
-    document.addEventListener("scroll", (event)=>{
-		var scroll = document.documentElement.scrollTop || document.body.scrollTop
-		var nav = find("nav")
-		if(window.innerWidth > 740)
-			nav.style.top = scroll > 122 ? (scroll > 244 ? "-122px" : 122-scroll.toString() + "px") : null
-		else
-			nav.style.top = scroll > 142 ? (scroll > 284 ? "-142px" : 142-scroll.toString() + "px") : null
-    }, false)
-
-    loadPage()
+    loadExternalContent();
 
 })()
 
-function loadPage(){
-	window.scrollTo(0,0)
-	pagesList.forEach((it)=>{ 
-		el = find("#"+it)
-		if(el){
-			el.classList.remove("hidden")
-			if(it == "market") setTimeout(()=>{createAllCharts()},500)
-		}
-	})
-	setTimeout(()=>{ pagesList.forEach((it)=>{ find("#"+it) ? find("#"+it).classList.remove("invisible") : null }) },500)
+function loadExternalContent(){
+    var script = document.createElement("script");
+    script.type = "text/javascript"; 
+    script.async = true;
+    script.src = "/js/external.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
 }
 
-function openPage(page){
-	pagesList.forEach((it)=>{ find("#"+it) ? find("#"+it).classList.add("invisible") : null})
-	setTimeout(()=>{ pagesList.forEach((it)=>{ find("#"+it) ? find("#"+it).classList.add("hidden") : null }) },500)
-	setTimeout(()=>{ window.scrollTo(0,0) },600)
-	setTimeout(()=>{ window.location = page },800)
+function hideMessage(){
+	hide(find("p#confirmation"))
 }
 
 function toggleNav(){
@@ -124,7 +95,7 @@ function sendForm(form){
 	      		message ? message.value = "" : null
 	      		phone ? phone.value = "" : null
 	      		show(information)
-	      		setTimeout(()=>{hide(information)},10000)
+	      		setTimeout(()=>{hide(information)},20000)
 	      		handleFormSubmission(form)
 	      	}
 	      	else if(response == "test"){
@@ -133,7 +104,7 @@ function sendForm(form){
 	      		message ? message.value = "" : null
 	      		phone ? phone.value = "" : null
 	      		show(information)
-	      		setTimeout(()=>{hide(information)},10000)
+	      		setTimeout(()=>{hide(information)},20000)
 	      	}
 	    }
 	}
@@ -145,13 +116,6 @@ function sendForm(form){
 	}
 
 	return false
-}
-
-function createAllCharts(){
-	createChart("chartA", [54.3, 46.7], ["Users (54.3% = 760million)", "Non-Users (45.7% = 640million)"])
-    createChart("chartB", [54, 44.06, 1.94], ["Mobile Phones (54% = 410.5million)", "Desktop (44.06% = 334.8million)", "Tablet (1.94% = 14.7million)"])
-    createChart("chartC", [78.35, 20.71, 0.94], ["Android (78.35% = 321.6million)", "iOS (20.71% = 85million)", "Other (0.94% = 3.9million)"])
-    chartsCreated = true
 }
 
 function find(selector){
@@ -188,63 +152,4 @@ function styleAsNumber(x) {
 	var parts = x.toString().split(".");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     return parts.join(".");
-}
-
-function createChart(id, data, labels){
-	let chartOptions = {
-          responsive: true,
-          legend: {
-            display: true,
-            position: 'bottom',
-            labels: { 
-            	boxWidth: 30,
-            	fontSize: 16
-            },
-          },
-          tooltips: {
-            callbacks: {
-              label: (tooltipItem, data) => {
-                const x = data.datasets[tooltipItem.datasetIndex]
-                  .data[tooltipItem.index]
-
-                return x+"%"
-              },
-            },
-            displayColors: false,
-          },
-          layout: {
-	            
-        	}
-       	}
-    let backgroundColors = [
-	                'rgba(140, 188, 63,1)',
-	                'rgba(54, 162, 235, 1)',
-	                'rgba(255, 206, 86, 1)',
-	                'rgba(255, 206, 86, 0.3)',
-	                'rgba(153, 102, 255, 0.3)',
-	                'rgba(255, 159, 64, 0.3)'
-	            ]
-	let borderColors = [
-	                'rgba(140, 188, 63,1)',
-	                'rgba(54, 162, 235, 1)',
-	                'rgba(255, 206, 86, 1)',
-	                'rgba(255, 206, 86, 1)',
-	                'rgba(153, 102, 255, 1)',
-	                'rgba(255, 159, 64, 1)'
-	            ]
-	var ctx = document.getElementById(id).getContext('2d');
-	var myChart = new Chart(ctx, {
-	    type: 'pie',
-	    data: {
-	        labels: labels,
-	        datasets: [{
-	            label: '# of Votes',
-	            data: data,
-	            backgroundColor: backgroundColors.slice(0, data.length),
-	            borderColor: borderColors.slice(0, data.length),
-	            borderWidth: 1
-	        }]
-	    },
-	    options: chartOptions
-	});
 }

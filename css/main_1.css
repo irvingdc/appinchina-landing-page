@@ -865,8 +865,17 @@ div#market div.welcome-page p.itallic-label{
 div#market h3.itallic-label{
     padding: 30px 30px 25px;
     font-style: italic;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 200;
+}
+div#market h3.itallic-label a{
+    color:#37c;
+}
+div#market h3.itallic-label.bottom-label{
+    padding: 0px 30px 35px;
+}
+div#market h3.itallic-label.top-label{
+    padding: 0px 30px;
 }
 p.information{
 	font-size: 14px;
@@ -883,6 +892,17 @@ p#confirmation{
     left: 0px;
     color: white;
     z-index: 900;
+    display: flex;
+    align-items: center;
+}
+p#confirmation span{
+    margin:auto;
+}
+p#confirmation img{
+    width: 20px;
+    margin: 0px 0px 0px 10px;
+    height: 20px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1000px) {
