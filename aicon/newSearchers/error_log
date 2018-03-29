@@ -151,3 +151,156 @@
 [21-Nov-2017 02:02:10 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=mygrozbeckert): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
 [21-Nov-2017 06:53:53 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=audials+radio): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[23-Nov-2017 05:07:22 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=tasker): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 05:07:28 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=tchat+for+twitch): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[23-Nov-2017 05:12:45 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=uber): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 05:17:17 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=tasker): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 10:05:44 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=tasker): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 11:05:56 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=instagram): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 11:06:13 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/zol?search=instagram): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search18.php on line 6
+[23-Nov-2017 11:29:33 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=My+pocket+nutritionist): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 11:30:54 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=Nutrium): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 11:31:01 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=Nutrium): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[23-Nov-2017 14:10:48 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=Nutrium): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[23-Nov-2017 14:11:46 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=easydiet): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[23-Nov-2017 14:13:18 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=My+pocket+nutritionist): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 14:20:22 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=My+pocket+nutritionist): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 14:21:23 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=My+pocket+nutritionist): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 14:43:47 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=skype+business): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[23-Nov-2017 15:33:33 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=Filinko): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 15:33:33 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=Filinko): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[23-Nov-2017 15:37:16 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=Filinko): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 15:37:16 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=Filinko): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[23-Nov-2017 15:37:32 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=filinko): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 15:37:32 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=filinko): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[23-Nov-2017 21:58:53 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=tumblr): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[23-Nov-2017 21:58:53 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/zol?search=tumblr): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search18.php on line 6
+[24-Nov-2017 09:09:27 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/himarket?search=filinko): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search3.php on line 6
+[24-Nov-2017 09:09:27 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=filinko): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[26-Nov-2017 01:06:55 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=kawo): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[26-Nov-2017 09:51:17 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=Trollmeon+): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[26-Nov-2017 09:52:03 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/360?search=V%C3%A1no%C4%8Dn%C3%AD+d%C3%A1rky): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search5.php on line 6
+[26-Nov-2017 09:52:04 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/wandoujia?search=V%C3%A1no%C4%8Dn%C3%AD+d%C3%A1rky): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search7.php on line 6
+[26-Nov-2017 09:52:07 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/pp?search=V%C3%A1no%C4%8Dn%C3%AD+d%C3%A1rky): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search12.php on line 6
+[26-Nov-2017 09:52:16 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/zol?search=V%C3%A1no%C4%8Dn%C3%AD+d%C3%A1rky): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search18.php on line 6
+[26-Nov-2017 13:46:27 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=christmas+RADIO): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[26-Nov-2017 13:57:26 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=Hotels+for+tablets): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[26-Nov-2017 13:59:55 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=xmas+radio): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[26-Nov-2017 14:01:07 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=christmas+radio): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[26-Nov-2017 14:02:21 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=country+music+radio): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[26-Nov-2017 22:42:04 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=super+scales): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[26-Nov-2017 22:42:09 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=super+scales): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[27-Nov-2017 02:14:36 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=economist): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[27-Nov-2017 02:14:36 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/himarket?search=economist): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search3.php on line 6
+[27-Nov-2017 02:14:39 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/91?search=economist): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search9.php on line 6
+[27-Nov-2017 04:21:02 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/360?search=deezer): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search5.php on line 6
+[27-Nov-2017 07:26:06 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/360?search=romain+barthez): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search5.php on line 6
+[27-Nov-2017 07:26:06 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=romain+barthez): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[27-Nov-2017 07:26:14 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=romain+barthez): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[27-Nov-2017 07:26:14 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/360?search=romain+barthez): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search5.php on line 6
+[27-Nov-2017 07:26:15 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=romain+barthez): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[27-Nov-2017 11:35:52 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lenovo?search=trello): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search11.php on line 6
+[27-Nov-2017 11:35:54 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/meizu?search=trello): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search13.php on line 6
+[27-Nov-2017 11:36:14 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lenovo?search=freedcamp): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search11.php on line 6
+[27-Nov-2017 11:36:19 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=freedcamp): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[28-Nov-2017 01:12:42 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=Talking+Dinosaur): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[28-Nov-2017 01:12:53 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=Talking+Dinosaur): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[28-Nov-2017 01:16:40 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=Talking+Animal+Lion): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[28-Nov-2017 01:18:21 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=jumpy+santa): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[28-Nov-2017 01:40:02 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=talking+dinosaur): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[28-Nov-2017 01:40:13 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=talking+dinosaur): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[28-Nov-2017 05:59:42 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/himarket?search=%E8%85%BE%E8%AE%AF%E6%89%8B%E6%9C%BA%E7%AE%A1%E5%AE%B6): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search3.php on line 6
+[28-Nov-2017 05:59:42 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/baidu?search=%E8%85%BE%E8%AE%AF%E6%89%8B%E6%9C%BA%E7%AE%A1%E5%AE%B6): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search1.php on line 5
+[28-Nov-2017 05:59:42 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/360?search=%E8%85%BE%E8%AE%AF%E6%89%8B%E6%9C%BA%E7%AE%A1%E5%AE%B6): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search5.php on line 6
+[28-Nov-2017 05:59:45 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/anzhi?search=%E8%85%BE%E8%AE%AF%E6%89%8B%E6%9C%BA%E7%AE%A1%E5%AE%B6): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search6.php on line 6
+[28-Nov-2017 05:59:46 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/wandoujia?search=%E8%85%BE%E8%AE%AF%E6%89%8B%E6%9C%BA%E7%AE%A1%E5%AE%B6): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search7.php on line 6
+[28-Nov-2017 06:00:00 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/91?search=%E8%85%BE%E8%AE%AF%E6%89%8B%E6%9C%BA%E7%AE%A1%E5%AE%B6): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search9.php on line 6
+[28-Nov-2017 09:01:38 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=merck+manual): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[28-Nov-2017 13:40:26 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/360?search=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search5.php on line 6
+[28-Nov-2017 13:40:28 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/wandoujia?search=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search7.php on line 6
+[28-Nov-2017 13:40:30 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/pp?search=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search12.php on line 6
+[28-Nov-2017 13:40:51 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/zol?search=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search18.php on line 6
+[28-Nov-2017 14:23:54 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=easy+backup): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[28-Nov-2017 14:23:56 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/zol?search=easy+backup): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search18.php on line 6
+[28-Nov-2017 14:45:40 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=mobile+optimizer): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[28-Nov-2017 21:00:31 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/zol?search=microsoft+office): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search18.php on line 6
+[29-Nov-2017 00:27:17 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lenovo?search=qq): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search11.php on line 6
+[29-Nov-2017 03:12:44 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=qq): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[29-Nov-2017 03:12:44 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/360?search=qq): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search5.php on line 6
+[29-Nov-2017 03:12:53 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lenovo?search=qq): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search11.php on line 6
+[29-Nov-2017 03:12:55 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/meizu?search=qq): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search13.php on line 6
+[29-Nov-2017 03:39:25 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lenovo?search=qq): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search11.php on line 6
+[29-Nov-2017 03:39:26 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/pp?search=qq): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search12.php on line 6
+[29-Nov-2017 07:51:53 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=asia+briefing): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[29-Nov-2017 07:51:53 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/meizu?search=asia+briefing): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search13.php on line 6
+[29-Nov-2017 09:47:59 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=applike): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[30-Nov-2017 02:44:30 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=vampirina): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[30-Nov-2017 02:45:42 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/zol?search=stickman): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search18.php on line 6
+[30-Nov-2017 02:47:23 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/tencent?search=aladeen): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search0.php on line 5
+[30-Nov-2017 02:47:29 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/meizu?search=aladeen): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search13.php on line 6
+[30-Nov-2017 02:47:31 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=aladeen): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[30-Nov-2017 02:48:23 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=pakdam): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6
+[30-Nov-2017 02:49:26 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/zol?search=photo+editor): failed to open stream: HTTP request failed! HTTP/1.1 504 Gateway Time-out
+ in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search18.php on line 6
+[30-Nov-2017 02:50:24 America/Chicago] PHP Warning:  file_get_contents(http://31.220.53.98/scrapers/lemon?search=whatsapp): failed to open stream: HTTP request failed!  in /home2/gingro/public_html/appinchina.co/aicon/newSearchers/search16.php on line 6

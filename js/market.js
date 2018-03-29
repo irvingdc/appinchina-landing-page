@@ -1,13 +1,14 @@
-function createAllCharts(){
-	createChart("chartA", [54.3, 46.7], ["Users ( 760million )", "Non-Users ( 640million )"])
-    createChart("chartB", [54, 44.06, 1.94], ["Mobile Phones ( > 410.5million )", "Desktop ( > 334.8million )", "Tablet ( > 14.7million )"])
-    createChart("chartC", [78.35, 20.71, 0.94], ["Android ( > 321.6million )", "iOS ( > 85million )", "Other ( > 3.9million )"])
-    chartsCreated = true
+function createAllCharts() { 
+	createChart("chartA", [53.2, 46.8], ["Users (731,250,000)", "Non-Users (643,280,000)"])
+	createChart("chartB", [95.1, 4.9], ["Mobile (695,310,000)", "Other (35,940,000)"])
+	createChart("chartC", [71.97, 18.89, 9.14], ["Android (500,414,000)", "iOS (131,344,000)", "Other (63,552,000)"])
+	chartsCreated = true
 }
 
 function createChart(id, data, labels){
 	let chartOptions = {
           responsive: true,
+          events: ['mousemove', 'mouseout'],
           legend: {
             display: true,
             position: 'bottom',
@@ -53,7 +54,7 @@ function createChart(id, data, labels){
 	    data: {
 	        labels: labels,
 	        datasets: [{
-	            label: '# of Votes',
+	            label: '#',
 	            data: data,
 	            backgroundColor: backgroundColors.slice(0, data.length),
 	            borderColor: borderColors.slice(0, data.length),
