@@ -99,7 +99,7 @@
 	margin-right: 12px;
 }
 #blog .card span i.author-antony{
-	background: url(https://www.appinchina.co/images/mail/aantony.jpeg) no-repeat center;
+	background: url(/images/mail/aantony.jpeg) no-repeat center;
 	background-size: cover;
 	display: inline-block;
 }

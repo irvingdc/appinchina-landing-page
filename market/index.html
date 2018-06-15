@@ -9,13 +9,15 @@
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 	ga('create', 'UA-2213742-7', 'auto');
 	ga('send', 'pageview');
+	ga('config', 'AW-825668528');
 	</script>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="https://www.appinchina.co/css/main.css" />
 	<link rel="shortcut icon" href="https://www.appinchina.co/images/logo.png"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  	<meta name="description" content="In China, there are over 400 Android app stores and every month, we rank the top 20 Chinese Android app stores using our unique AIC Index, which takes into account both coverage (install base) and activity (active user base) of each app store." />
+  	<meta name="description" content="In China, there are over 400 Android app stores and every month, we rank the top 20 Chinese Android app stores taking into account the activity (monthly active users) of each app store." />
 	<title>Top 20 Chinese Android App Stores - AppInChina | The Market</title>
+	<link rel="canonical" href="https://www.appinchina.co/market/"/>
 </head>
 <body>
 	<div id="newsletter-signup">
@@ -67,7 +69,7 @@
 				<span>
 					<a href="https://cn.appinchina.co">中文</a>
 					<a href="https://es.appinchina.co">Español</a>
-					<a href="https://fr.appinchina.co">François</a>
+					<a href="https://fr.appinchina.co">Français</a>
 				</span>
 			</div>
 		</li>
@@ -89,7 +91,7 @@
 						<h1>The Market</h1>
 					</div>
 					<p>China has a population of around 1.4 billion and the Chinese mobile app market is different from anything you've ever known.</p>
-					<h3 class="itallic-label" style="padding:10px 30px 5px;">December 31st, 2016</h3>
+					<h3 class="itallic-label" style="padding:10px 30px 5px;">December 31st, 2017</h3>
 					<div class="charts-container">
 						<span>
 							<h3>Internet</h3>
@@ -104,7 +106,8 @@
 							<canvas id="chartC" width="290" height="410"></canvas>
 						</span>
 					</div>
-					<h3 class="itallic-label top-label">* Data sourced from <a href="http://gs.statcounter.com/os-market-share/mobile/worldwide#monthly-201612-201712" target="_blank">StatCounter</a> and <a href="https://cnnic.com.cn/IDR/ReportDownloads/201706/P020170608523740585924.pdf" target="_blank">China Internet Network Information Center</a></h3>
+					<h3 class="itallic-label top-label">* Data sourced from <a href="http://gs.statcounter.com/os-market-share/mobile/china#monthly-201712-201801" 
+					target="_blank">StatCounter</a> and <a href="http://www.cnnic.cn/hlwfzyj/hlwxzbg/hlwtjbg/201803/P020180305409870339136.pdf" target="_blank">China Internet Network Information Center</a></h3>
 				</div>
 			</div>
 		</div>
@@ -115,158 +118,338 @@
 					<div class="title-with-line">
 						<h1>Top 20 Chinese Android App Stores</h1>
 					</div>
-					<p>In China, there are over 400 Android app stores and every month, we rank the top 20 Chinese Android app stores using our unique AIC Index, which takes into account both coverage (install base) and activity (active user base) of each app store.</p>
+					<p>In China, there are over 400 Android app stores and every month, we rank the top 20 Chinese Android app stores taking into account the activity (monthly active users) of each app store.</p>
 				</div>
 			</div>
 		</div>
 		<div id="storesList">
-			<h3 class="itallic-label">December 31st, 2017</h3>
+			<h3 class="itallic-label">April 30th, 2018</h3>
 			<table>
 				<tr>
 					<td></td>
 					<td>App Store</td>
 					<td></td>
-					<td>AIC Index</td>
+					<td>MAU</td>
 				</tr>
-				<tr>
+				<tr onclick="selectRow(this)" class="market-row-open">
 					<td>1</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/360.png"></td>
-					<td><a href="http://zhushou.360.cn/" target="_blank">360 Mobile Assistant <span>360手机助手</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 17.96%</td>
-					<td class="neutral">-</td>
-				</tr>
-				<tr>
-					<td>2</td>
 					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/tencent.png"></td>
-					<td><a href="http://sj.qq.com/myapp/" target="_blank">Tencent MyApp  <span>腾讯应用宝</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 15.25%</td>
+					<td>Tencent MyApp</td>
+					<td><span class="aic-index">MAU: </span> 13.95%</td>
 					<td class="neutral">-</td>
 				</tr>
-				<tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 腾讯应用宝</p>
+						<p>Parent Company: Tencent</p>
+						<p>Company Type: Online Services</p>
+						<p>Special Requirements: Must submit Software Copyright Certificate.</p>
+						<p>Official Website: <a href="http://android.myapp.com/" target="_blank">http://android.myapp.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>2</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/360.png"></td>
+					<td>360 Mobile Assistant</td>
+					<td><span class="aic-index">MAU: </span> 10.36%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 360手机助手</p>
+						<p>Parent Company: Qihoo 360</p>
+						<p>Company Type: Internet Security/Software</p>
+						<p>Special Requirements: Must submit Software Copyright Certificate.</p>
+						<p>Official Website: <a href="http://zhushou.360.cn/" target="_blank">http://zhushou.360.cn/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
 					<td>3</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/miui.png"></td>
-					<td><a href="http://app.xiaomi.com" target="_blank">MIUI App Store <span>小米应用商店</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 9.25%</td>
-					<td class="neutral">-</td>
-				</tr>
-				<tr>
-					<td>4</td>
 					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/baidu.png"></td>
-					<td><a href="http://as.baidu.com" target="_blank">Baidu Mobile Assistant <span>百度手机助手</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 7.70%</td>
-					<td class="neutral">-</td>
+					<td>Baidu Mobile Assistant</td>
+					<td><span class="aic-index">MAU: </span> 8.99%</td>
+					<td class="positive">1▲</td>
 				</tr>
-				<tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 百度手机助手</p>
+						<p>Parent Company: Baidu</p>
+						<p>Company Type: Internet Search Engine/Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://as.baidu.com/" target="_blank">http://as.baidu.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>4</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/oppo.png"></td>
+					<td>Oppo Software Store</td>
+					<td><span class="aic-index">MAU: </span> 8.94%</td>
+					<td class="negative">1▼</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: OPPO软件商店</p>
+						<p>Parent Company: BBK Electronics</p>
+						<p>Company Type: Mobile Hardware/Software</p>
+						<p>Special Requirements: Must submit Software Copyright Certificate.</p>
+						<p>Official Website: <a href="https://store.oppomobile.com/" target="_blank">https://store.oppomobile.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
 					<td>5</td>
 					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/huawei.png" class="img5"></td>
-					<td><a href="http://app.hicloud.com/" target="_blank">Huawei App Market <span>华为应用市场</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 6.79%</td>
+					<td>Huawei App Market</td>
+					<td><span class="aic-index">MAU: </span> 8.17%</td>
 					<td class="neutral">-</td>
 				</tr>
-				<tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 华为应用市场</p>
+						<p>Parent Company: Huawei</p>
+						<p>Company Type: Tech Hardware/Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://app.hicloud.com/" target="_blank">http://app.hicloud.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
 					<td>6</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/oppo.png"></td>
-					<td><a href="http://store.keke.cn/" target="_blank">Oppo Store <span>可可软件商店</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 5.76%</td>
-					<td class="positive">1▲</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/miui.png"></td>
+					<td>MIUI App Store</td>
+					<td><span class="aic-index">MAU: </span> 6.21%</td>
+					<td class="neutral">-</td>
 				</tr>
-				<tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 小米应用商店</p>
+						<p>Parent Company: Xiaomi</p>
+						<p>Company Type: Tech Hardware/Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://app.xiaomi.com/" target="_blank">http://app.xiaomi.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
 					<td>7</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/googleplay.png"></td>
-					<td><a href="http://play.google.com/store" target="_blank">Google Play <span>谷歌应用商店</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 5.67%</td>
-					<td class="negative">1▼</td>
-				</tr>
-				<tr>
-					<td>8</td>
 					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/vivo.png"></td>
-					<td><a href="https://dev.vivo.com.cn/doc/products/pc/index.html" target="_blank">VIVO App Store <span>VIVO应用商店</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 3.02%</td>
+					<td>VIVO App Store</td>
+					<td><span class="aic-index">MAU: </span> 5.15%</td>
 					<td class="neutral">-</td>
 				</tr>
-				<tr>
-					<td>9</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/meizu.jpeg"></td>
-					<td><a href="http://app.flyme.cn/" target="_blank">Meizu Flyme<span>魅族应用商店</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 1.96%</td>
-					<td class="neutral">-</td>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: VIVO应用商店</p>
+						<p>Parent Company: BBK Electronics</p>
+						<p>Company Type: Mobile Hardware/Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="https://dev.vivo.com.cn/doc/products/pc/index.html" target="_blank">https://dev.vivo.com.cn/doc/products/pc/index.html</a></p>
+					</td>
 				</tr>
-				<tr>
-					<td>10</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/wandoujia.png"></td>
-					<td><a href="http://www.wandoujia.com/apps" target="_blank">Wandoujia <span>豌豆荚</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 1.95%</td>
-					<td class="negative">-</td>
-				</tr>
-				<tr>
-					<td>11</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/sogou.png" class="img5"></td>
-					<td><a href="http://zhushou.sogou.com/" target="_blank">Sogou Mobile Assistant <span>搜狗手机助手</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 1.83%</td>
-					<td class="neutral">-</td>
-				</tr>
-				<tr>
-					<td>12</td>
+				<tr onclick="selectRow(this)">
+					<td>8</td>
 					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/pp.png" class="img5"></td>
-					<td><a href="https://www.25pp.com/android/" target="_blank">PP Mobile Assistant <span>PP助手</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 1.53%</td>
+					<td>PP Assistant</td>
+					<td><span class="aic-index">MAU: </span> 1.98%</td>
 					<td class="neutral">-</td>
 				</tr>
-				<tr>
-					<td>13</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/lenovo.png"></td>
-					<td><a href="http://www.lenovomm.com/index_app.html" target="_blank">Lenovo Le Store <span>联想乐商店</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 1.32%</td>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: PP助手</p>
+						<p>Parent Company: Alibaba</p>
+						<p>Company Type: Online Services</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="https://www.25pp.com/android/" target="_blank">https://www.25pp.com/android/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>9</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/wandoujia.png"></td>
+					<td>Wandoujia</td>
+					<td><span class="aic-index">MAU: </span> 1.44%</td>
 					<td class="neutral">-</td>
 				</tr>
-				<tr>
-					<td>14</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/angogo.png"></td>
-					<td><a href="http://www.30.net/Home/Product" target="_blank">AnGoGo Manager <span>安狗狗管家</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 1.17%</td>
-					<td class="neutral">-</td>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 豌豆荚</p>
+						<p>Parent Company: Alibaba</p>
+						<p>Company Type: Online Services</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://www.wandoujia.com/apps" target="_blank">http://www.wandoujia.com/apps</a></p>
+					</td>
 				</tr>
-				<tr>
-					<td>15</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/anzhi.jpg"></td>
-					<td><a href="http://www.anzhi.com/applist.html" target="_blank">Anzhi Market <span>安智市场</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 0.95%</td>
-					<td class="neutral">-</td>
-				</tr>
-				<tr>
-					<td>16</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/2345.png"></td>
-					<td><a href="http://zhushou.2345.com/" target="_blank">2345 <span>2345手机助手</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 0.89%</td>
-					<td class="neutral">-</td>
-				</tr>
-				<tr>
-					<td>17</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/mm.png"></td>
-					<td><a href="http://mm.10086.cn/store" target="_blank">China Mobile MM Store<span>中国移动MM应用商场</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 0.77%</td>
-					<td class="positive">1▲</td>
-				</tr>
-				<tr>
-					<td>18</td>
+				<tr onclick="selectRow(this)">
+					<td>10</td>
 					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/himarket.png"></td>
-					<td><a href="http://apk.hiapk.com" target="_blank">HiMarket <span>安卓市场</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 0.76%</td>
-					<td class="negative">1▼</td>
+					<td>HiMarket</td>
+					<td><span class="aic-index">MAU: </span> 0.87%</td>
+					<td class="neutral">-</td>
 				</tr>
-				<tr>
-					<td>19</td>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 安卓市场</p>
+						<p>Parent Company: Baidu</p>
+						<p>Company Type: Internet Search Engine/Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://apk.hiapk.com/" target="_blank">http://apk.hiapk.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>11</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/anzhi.jpg"></td>
+					<td>Anzhi Market</td>
+					<td><span class="aic-index">MAU: </span> 0.49%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 安智市场</p>
+						<p>Parent Company: Anzhi</p>
+						<p>Company Type: Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://www.anzhi.com/applist.html" target="_blank">http://www.anzhi.com/applist.html</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>12</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/2345.png"></td>
+					<td>2345 Mobile Assistant</td>
+					<td><span class="aic-index">MAU: </span> 0.37%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 2345手机助手</p>
+						<p>Parent Company: 2345</p>
+						<p>Company Type: Internet Search Engine/Software</p>
+						<p>Special Requirements: Only upload apps through paid partnership.</p>
+						<p>Official Website: <a href="http://zhushou.2345.com/" target="_blank">http://zhushou.2345.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>13</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/telecom.png"></td>
+					<td>China Telecom 189 Store</td>
+					<td><span class="aic-index">MAU: </span> 0.18%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 中国电信天翼空间</p>
+						<p>Parent Company: China Telecom</p>
+						<p>Company Type: Telecommunications</p>
+						<p>Special Requirements: Only upload apps through revenue share directly with developers.</p>
+						<p>Official Website: <a href="https://www.189store.com/index/toMkt?type=1" target="_blank">https://www.189store.com/index/toMkt?type=1</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>14</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/googleplay.png"></td>
+					<td>Google Play</td>
+					<td><span class="aic-index">MAU: </span> 0.15%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 谷歌应用商店</p>
+						<p>Parent Company: Google</p>
+						<p>Company Type: Internet Search Engine/Software/Hardware</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://play.google.com/store" target="_blank">http://play.google.com/store</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>15</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/mm.png"></td>
+					<td>China Mobile MM Store</td>
+					<td><span class="aic-index">MAU: </span> 0.12%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 中国移动MM应用商场</p>
+						<p>Parent Company: China Mobile</p>
+						<p>Company Type: Telecommunications</p>
+						<p>Special Requirements: Only upload apps through revenue share directly with developers.</p>
+						<p>Official Website: <a href="http://mm.10086.cn/store" target="_blank">http://mm.10086.cn/store</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>16</td>
 					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/lemon.png"></td>
-					<td><a href="http://apps.mycheering.com/WebPage/index.html" target="_blank">Cheering Market <span>柠檬助手</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 0.56%</td>
-					<td class="positive">1▲</td>
+					<td>Cheering Market</td>
+					<td><span class="aic-index">MAU: </span> 0.12%</td>
+					<td class="neutral">-</td>
 				</tr>
-				<tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 柠檬助手</p>
+						<p>Parent Company: Cheering</p>
+						<p>Company Type: Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://apps.mycheering.com/WebPage/index.html" target="_blank">http://apps.mycheering.com/WebPage/index.html</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>17</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/appchina.png"></td>
+					<td>AppChina</td>
+					<td><span class="aic-index">MAU: </span> 0.10%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 应用汇</p>
+						<p>Parent Company: AppChina</p>
+						<p>Company Type: App Store</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://www.appchina.com/soft" target="_blank">http://www.appchina.com/soft</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>18</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/unicom.png"></td>
+					<td>China Unicom Wo Store</a></td>
+					<td><span class="aic-index">MAU: </span> 0.08%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 中国联通沃商店</p>
+						<p>Parent Company: China Unicom</p>
+						<p>Company Type: Telecommunications</p>
+						<p>Special Requirements: Only upload apps through revenue share directly with developers.</p>
+						<p>Official Website: <a href="http://store.wo.com.cn/" target="_blank">http://store.wo.com.cn/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>19</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/niucoo.png"></td>
+					<td>Niucoo Assistant</td>
+					<td><span class="aic-index">MAU: </span> 0.07%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 纽扣助手</p>
+						<p>Parent Company: Niucoo</p>
+						<p>Company Type: App Store</p>
+						<p>Special Requirements: Only upload pre-selected apps.</p>
+						<p>Official Website: <a href="http://niucoo.cn/" target="_blank">http://niucoo.cn/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
 					<td>20</td>
-					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/zuimeia.png" style="border-radius: 5px;"></td>
-					<td><a href="http://zuimeia.com/apps/?platform=2" target="_blank">Zui Mei App <span>最美应用</span></a></td>
-					<td><span class="aic-index">AIC Index: </span> 0.47%</td>
-					<td class="negative">1▼</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/coolapk.png"></td>
+					<td>Cool Market</td>
+					<td><span class="aic-index">MAU: </span> 0.02%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 酷市场</p>
+						<p>Parent Company: Coolapk</p>
+						<p>Company Type: App Store</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="https://coolapk.com/apk/" target="_blank">https://coolapk.com/apk/</a></p>
+					</td>
 				</tr>
 			</table>
 			<h3 class="itallic-label bottom-label">* Data sourced from <a href="https://www.talkingdata.com/" target="_blank">TalkingData</a></h3>
@@ -279,18 +462,18 @@
 					</div>
 					<p>Want to get placement on these app stores?</p>
 					<form class="vertical-form with-border"  onsubmit="return sendForm('marketForm')">
-						<input type="text" name="name" placeholder="Name" required/>
-						<input type="email" name="email" placeholder="Email" required/>
+						<input type="text" name="name" placeholder="Name *" required/>
+						<input type="email" name="email" placeholder="Email *" required/>
 						<select name="service">
 							<option value="Not selected" disabled selected>Select Service</option>
-							<option value="Freemium">Freemium Package</option>
 							<option value="Essential">Essential Package</option>
 							<option value="Professional">Professional Package</option>
 							<option value="Premium">Premium Package</option>
 							<option value="Bespoke">Bespoke Package</option>
 							<option value="Other">Other Service</option>
 						</select>
-						<textarea name="message" placeholder="Message" required></textarea>
+						<textarea name="message" placeholder="Message *" required onkeyup="textareaChanged()"></textarea>
+						<p id="formErrorMessage">The message should be at least 40 characters long.</p>
 						<button type="submit">Submit</button>
 					</form>
 					<p class="information hidden invisible">We got your message and will contact you back within 2 working days.</p>
@@ -317,7 +500,7 @@
 	<script src="https://www.appinchina.co/js/market.js"></script>
 	<script src="https://www.appinchina.co/js/chart.js" async onload="createAllCharts()"></script>
 	<script type="text/javascript" id="SW-05b84440-4b11-4377-9c0a-8996bbf42fea"></script>
-	<script src="https://www.appinchina.co/js/main_aicon.js"></script>
+	<script src="https://www.appinchina.co/js/main.js"></script>
 
 <!-- LinkedIn Pixel Code -->
 <script type="text/javascript">

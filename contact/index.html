@@ -9,13 +9,15 @@
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 	ga('create', 'UA-2213742-7', 'auto');
 	ga('send', 'pageview');
+	ga('config', 'AW-825668528');
 	</script>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" type="text/css" href="https://www.appinchina.co/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
 	<link rel="shortcut icon" href="https://www.appinchina.co/images/logo.png"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   	<meta name="description" content="Have a project we can help you with? Contact us now for a free consultation or to request a quote. Simply fill out the form below, and we’ll contact you within 2 working days." />
 	<title>AppInChina | Contact Us</title>
+	<link rel="canonical" href="https://www.appinchina.co/contact/"/>
 </head>
 <body>
 	<nav>
@@ -52,7 +54,7 @@
 				<span>
 					<a href="https://cn.appinchina.co">中文</a>
 					<a href="https://es.appinchina.co">Español</a>
-					<a href="https://fr.appinchina.co">François</a>
+					<a href="https://fr.appinchina.co">Français</a>
 				</span>
 			</div>
 		</li>
@@ -76,18 +78,18 @@
 						Contact us now for a free consultation or to request a quote.<br/>Simply fill out the form below, and we’ll contact you within 2 working days.</p>
 					<div class="flex top">
 						<form class="vertical-form align-left" onsubmit="return sendForm('contactForm')">
-							<input type="text" name="name" placeholder="Name" required>
-							<input type="email" name="email" placeholder="Email" required>
+							<input type="text" name="name" placeholder="Name *" required>
+							<input type="email" name="email" placeholder="Email *" required>
 							<select name="service">
 								<option value="Not selected" disabled selected>Select Service</option>
-								<option value="Freemium">Freemium Package</option>
 								<option value="Essential">Essential Package</option>
 								<option value="Professional">Professional Package</option>
 								<option value="Premium">Premium Package</option>
 								<option value="Bespoke">Bespoke Package</option>
 								<option value="Other">Other Service</option>
 							</select>
-							<textarea id="message" placeholder="Message" required></textarea>
+							<textarea id="message" placeholder="Message *" required onkeyup="textareaChanged()"></textarea>
+							<p id="formErrorMessage">The message should be at least 40 characters long.</p>
 							<button type="submit">Submit</button>
 						</form>
 						<div class="side">

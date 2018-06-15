@@ -21,6 +21,7 @@
 	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 	<meta http-equiv="Pragma" content="no-cache" />
 	<meta http-equiv="Expires" content="0" />
+	<link rel="canonical" href="https://www.appinchina.co/success/"/>
 </head>
 <body>
 	<div id="newsletter-signup">
@@ -72,7 +73,7 @@
 				<span>
 					<a href="https://cn.appinchina.co">中文</a>
 					<a href="https://es.appinchina.co">Español</a>
-					<a href="https://fr.appinchina.co">François</a>
+					<a href="https://fr.appinchina.co">Français</a>
 				</span>
 			</div>
 		</li>
@@ -80,6 +81,10 @@
 	<div class="gray-filter overlay hidden invisible"></div>
 	<p class="hidden invisible confirmation" id="newsletter-confirmation">
 		<span>Thank you for signing up to our newsletter</span>
+		<img src="https://www.appinchina.co/images/close-white.png" onclick="hideMessage()"/>
+	</p>
+	<p class="hidden invisible confirmation" id="confirmation">
+		<span>Thank you for your feedback.</span>
 		<img src="https://www.appinchina.co/images/close-white.png" onclick="hideMessage()"/>
 	</p>
 	<div id="blog">
@@ -102,6 +107,22 @@
 					</span>
 				</div>
 				<a href="https://appinchina.co/the-economist-global-business-review/" class="green-button">Read more</a>
+			</div>
+		</div>
+	</div>
+	<div id="feedbackForm">
+		<div class="flex content">
+			<div class="align-center">
+				<div class="title-with-line">
+					<h1>Feedback</h1>
+				</div>
+				<p>Was this information useful? Tell us what you think.</p>
+				<form class="vertical-form with-border"  onsubmit="return sendForm('feedbackForm')">
+					<input type="email" name="email" placeholder="Email" required/>
+					<textarea name="message" placeholder="Message" required></textarea>
+					<button type="submit">Submit</button>
+				</form>
+				<p class="information hidden invisible">Thank you for your feedback.</p>
 			</div>
 		</div>
 	</div>

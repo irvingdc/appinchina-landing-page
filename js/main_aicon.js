@@ -170,13 +170,12 @@ function openNewsletterForm(){
 	find("#newsletter-signup form input").focus()
 }
 
-function sendNewsletterSignup(){
-	let formElement = find("#newsletter-signup form")
+function sendForm(form){
+	let formElement = find("#"+form+" form")
+	let name = formElement.querySelector("input[name='name']") ? formElement.querySelector("input[name='name']") : null
 	let email = formElement.querySelector("input[name='email']")
-	var button = formElement.querySelector("button")
-	let information = find("p#newsletter-confirmation")
-	var xhttp = new XMLHttpRequest()
-	var data = new FormData()
+	let service = formElement.querySelector("[name='service']") ? formElement.querySelector("[name='service']") : null
+	let message = formElement.querySelector("textarea") ? formElement.querySelector("textarea") : null
 	let source
 	if(getURLParameter("gclid")!="error") source = "Ads"
 	else if(getURLParameter("s")=='f') source = "Facebook"
@@ -187,42 +186,48 @@ function sendNewsletterSignup(){
 	else if(getURLParameter("s")=='r') source = "Reddit"
 	else if(window.localStorage.sendgrid) source = "Bulk Email"
 	else source = "Not Specified"
-	data.append('source', source)
+
+	let information = find("p#confirmation")
+	var button = formElement.querySelector("button")
+
+	var xhttp = new XMLHttpRequest()
+	var data = new FormData()
+	data.append('name', name ? name.value : "")
 	data.append('email', email.value)
-	data.append('form', "conquerMarketForm")
+	data.append('message', message ? message.value : "")
+	data.append('form', form)
+	data.append('source', source)
+	data.append('service', service ? service.value : "")
 	data.append('test', window.localStorage.appinchina ? "test" : null)
 
 	xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
-			loading = false
-			button.innerHTML = "Submit"
+		loading = false
+		button.innerHTML = "Submit"
 	      	let response = this.responseText
-	      	closeNewsletterForm()
 	      	if(response == "success"){
+	      		name ? name.value = "" : null
 	      		email.value = ""
+	      		message ? message.value = "" : null
 	      		show(information)
-	      		hide(find("#newsletter-signup"))
 	      		setTimeout(()=>{hide(information)},20000)
-	      		handleFormSubmission("conquerMarketForm")
-	      		//window.localStorage.newsletterRegistered = true
-	      		//gtag_report_conversion()
+	      		handleFormSubmission(form)
 	      	}
 	      	else if(response == "test"){
+	      		name ? name.value = "" : null
 	      		email.value = ""
+	      		message ? message.value = "" : null
 	      		show(information)
-	      		hide(find("#newsletter-signup"))
-	      		window.localStorage.newsletterRegistered = true
 	      		setTimeout(()=>{hide(information)},20000)
 	      	}
 	    }
 	}
 	if(!loading){
-		button.innerHTML = "<img src='/images/ring.gif' style='height:80%;'/>"
+		button.innerHTML = "<img src='https://www.appinchina.co/images/rolling.gif' style='height:80%;'/>"
 		loading = true
-		xhttp.open("POST", "/inc/mail_general.php", true)
+		xhttp.open("POST", "https://www.appinchina.co/inc/mail_general.php", true)
 		xhttp.send(data)
 	}
-
 	return false
 }
 

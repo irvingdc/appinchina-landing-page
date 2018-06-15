@@ -51,7 +51,11 @@ function handleImagesVisibility(scroll){
 	let selectors
 	if(window.location.pathname == "/" || window.location.pathname == "/test/") selectors = homeImageSelectors
 	else if (window.location.pathname == "/market/") selectors = marketImageSelectors
-	else return null
+	else {
+		console.log("pathname doesn't match",window.location.pathname)
+		return null
+	}
+	console.log("selectors:",selectors)
 	selectors.filter(it=>{return !it.displayed}).forEach(obj=>{
 		let elements = document.querySelectorAll(obj.selector)
 		elements.forEach(el=>{
@@ -88,33 +92,37 @@ function handleImagesVisibility(scroll){
     if(find("#clientsCarousel")) setupCarousel(70);
 
     document.addEventListener("scroll", (event)=>{
-		var scroll = document.documentElement.scrollTop || document.body.scrollTop
-		handleImagesVisibility(scroll)
+		handleScroll(home)
+    }, false)
+    setTimeout(()=>{handleScroll()},500)
+})()
 
-		var ul = find("nav+ul")
-		if(scroll > 190) ul.classList.add("green") 
-		else ul.classList.remove("green")
-		var newsletter = find("#newsletter-signup")
-		if(scroll < 150 && home){
+function handleScroll(home){
+	console.log("handling scroll")
+	var scroll = document.documentElement.scrollTop || document.body.scrollTop
+	handleImagesVisibility(scroll)
+	var ul = find("nav+ul")
+	if(scroll > 190) ul.classList.add("green") 
+	else ul.classList.remove("green")
+	var newsletter = find("#newsletter-signup")
+	if(scroll < 150 && home){
+		newsletter.classList.add("newsletter-hidden")
+		newsletter.classList.remove("opened")
+	}
+	else if(scroll > newsletterScrollThreshold){
+		if(home){
 			newsletter.classList.add("newsletter-hidden")
 			newsletter.classList.remove("opened")
 		}
-		else if(scroll > newsletterScrollThreshold){
-			if(home){
-				newsletter.classList.add("newsletter-hidden")
-				newsletter.classList.remove("opened")
-			}
-			else if(newsletter && !newsletterWasDisplayed){
-				newsletterWasDisplayed = true
-				openNewsletterForm()
-			}
+		else if(newsletter && !newsletterWasDisplayed){
+			newsletterWasDisplayed = true
+			openNewsletterForm()
 		}
-		else{
-			if(home) newsletter.classList.remove("newsletter-hidden")
-		}
-
-    }, false)
-})()
+	}
+	else{
+		if(home) newsletter.classList.remove("newsletter-hidden")
+	}
+}
 
 function startTestimonials(){
 	testimonialsInterval = setInterval(()=>{
@@ -170,59 +178,71 @@ function openNewsletterForm(){
 	find("#newsletter-signup form input").focus()
 }
 
-function sendNewsletterSignup(){
-	let formElement = find("#newsletter-signup form")
+function textareaChanged(){
+	let errorMessage = find("#formErrorMessage")
+	if(errorMessage) errorMessage.classList.remove("displayed")
+}
+
+function sendForm(form){
+
+	let formElement = find("#"+form+" form")
+	let name = formElement.querySelector("input[name='name']") ? formElement.querySelector("input[name='name']") : null
 	let email = formElement.querySelector("input[name='email']")
+	let service = formElement.querySelector("[name='service']") ? formElement.querySelector("[name='service']") : null
+	let message = formElement.querySelector("textarea") ? formElement.querySelector("textarea") : null
+	let source = window.localStorage.source ? window.localStorage.source : "Not Specified"
+
+	const MIN_LENGTH = window.location.host.includes("cn.appinchina") ? 10 : 40
+	if(message && message.value && message.value.trim().length < MIN_LENGTH){
+		let errorMessage = find("#formErrorMessage")
+		if(errorMessage) errorMessage.classList.add("displayed")
+		return false
+	} 
+
+	let information = find("p#confirmation")
 	var button = formElement.querySelector("button")
-	let information = find("p#newsletter-confirmation")
+
 	var xhttp = new XMLHttpRequest()
 	var data = new FormData()
-	let source
-	if(getURLParameter("gclid")!="error") source = "Ads"
-	else if(getURLParameter("s")=='f') source = "Facebook"
-	else if(getURLParameter("s")=='t') source = "Twitter"
-	else if(getURLParameter("s")=='l') source = "Linkedin"
-	else if(getURLParameter("s")=='q') source = "Quora"
-	else if(getURLParameter("s")=='o') source = "Stackoverflow"
-	else if(getURLParameter("s")=='r') source = "Reddit"
-	else if(window.localStorage.sendgrid) source = "Bulk Email"
-	else source = "Not Specified"
-	data.append('source', source)
+	data.append('referrer', window.localStorage.referrer)
+	data.append('name', name ? name.value : "")
 	data.append('email', email.value)
-	data.append('form', "conquerMarketForm")
+	data.append('message', message ? message.value : "")
+	data.append('form', form)
+	data.append('source', source)
+	data.append('service', service ? service.value : "")
 	data.append('test', window.localStorage.appinchina ? "test" : null)
 
 	xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
-			loading = false
-			button.innerHTML = "Submit"
+		loading = false
+		button.innerHTML = "Submit"
 	      	let response = this.responseText
-	      	closeNewsletterForm()
+	      	localStorage.removeItem("source")
 	      	if(response == "success"){
+	      		name ? name.value = "" : null
 	      		email.value = ""
+	      		message ? message.value = "" : null
 	      		show(information)
-	      		hide(find("#newsletter-signup"))
 	      		setTimeout(()=>{hide(information)},20000)
-	      		handleFormSubmission("conquerMarketForm")
-	      		//window.localStorage.newsletterRegistered = true
-	      		//gtag_report_conversion()
+	      		handleFormSubmission(form)
+	      		gtag_report_conversion()
 	      	}
 	      	else if(response == "test"){
+	      		name ? name.value = "" : null
 	      		email.value = ""
+	      		message ? message.value = "" : null
 	      		show(information)
-	      		hide(find("#newsletter-signup"))
-	      		window.localStorage.newsletterRegistered = true
 	      		setTimeout(()=>{hide(information)},20000)
 	      	}
 	    }
 	}
 	if(!loading){
-		button.innerHTML = "<img src='/images/ring.gif' style='height:80%;'/>"
+		button.innerHTML = "<img src='https://www.appinchina.co/images/rolling.gif' style='height:80%;'/>"
 		loading = true
-		xhttp.open("POST", "/inc/mail_general.php", true)
+		xhttp.open("POST", "https://www.appinchina.co/inc/mail_general.php", true)
 		xhttp.send(data)
 	}
-
 	return false
 }
 
@@ -234,9 +254,38 @@ function loadExternalContent(){
     if(getURLParameter("viva")=="mexico"){
     	window.localStorage.appinchina = true
     }
-    if(getURLParameter("s")=="s"){
-    	window.localStorage.sendgrid = true
-    }
+    var source
+    	if(getURLParameter("gclid")!="error") source = "Google Ads"
+	else if(getURLParameter("s")=='f') source = "Facebook"
+	else if(getURLParameter("s")=='fa') source = "Facebook Ads"
+	else if(getURLParameter("s")=='la') source = "Linkedin Ads"
+	else if(getURLParameter("s")=='t') source = "Twitter"
+	else if(getURLParameter("s")=='l') source = "Linkedin"
+	else if(getURLParameter("s")=='q') source = "Quora"
+	else if(getURLParameter("s")=='o') source = "Stackoverflow"
+	else if(getURLParameter("s")=='r') source = "Reddit"
+	else if(getURLParameter("s")=='m') source = "Medium"
+	if(source) window.localStorage.source = source
+	
+	if(document.referrer){
+	    if(!!document.referrer && !document.referrer.includes("appinchina.co")){
+	        console.log("saving the new referrer")
+	        window.localStorage.referrer = document.referrer
+	    }
+	    else{
+	        console.log("the referrer is appinchina")
+	    }
+	}
+	else{
+	    if(!window.localStorage.referrer){
+	        console.log("there's no referrer saved")
+	        window.localStorage.referrer = "No referrer"
+	    }
+	    else{
+	        console.log("'No referrer' already saved as referrer")
+	    }
+	}
+
 }
 
 function insertScript(url){
@@ -292,64 +341,52 @@ function hide(element){
 	setTimeout(()=>{element.classList.add("hidden")},700)
 }
 
-function sendForm(form){
-	let formElement = find("#"+form+" form")
-	let name = formElement.querySelector("input[name='name']")
+function sendNewsletterSignup(){
+	let formElement = find("#newsletter-signup form")
 	let email = formElement.querySelector("input[name='email']")
-	let service = formElement.querySelector("[name='service']") ? formElement.querySelector("[name='service']") : null
-	let message = formElement.querySelector("textarea") ? formElement.querySelector("textarea") : null
-	let source
-	if(getURLParameter("gclid")!="error") source = "Ads"
-	else if(getURLParameter("s")=='f') source = "Facebook"
-	else if(getURLParameter("s")=='t') source = "Twitter"
-	else if(getURLParameter("s")=='l') source = "Linkedin"
-	else if(getURLParameter("s")=='q') source = "Quora"
-	else if(getURLParameter("s")=='o') source = "Stackoverflow"
-	else if(getURLParameter("s")=='r') source = "Reddit"
-	else if(window.localStorage.sendgrid) source = "Bulk Email"
-	else source = "Not Specified"
-
-	let information = find("p#confirmation")
 	var button = formElement.querySelector("button")
-
+	let information = find("p#newsletter-confirmation")
 	var xhttp = new XMLHttpRequest()
 	var data = new FormData()
-	data.append('name', name.value)
-	data.append('email', email.value)
-	data.append('message', message ? message.value : "")
-	data.append('form', form)
+	let source = window.localStorage.source ? window.localStorage.source : "Not Specified"
+
+	data.append('referrer', window.localStorage.referrer)
 	data.append('source', source)
-	data.append('service', service ? service.value : "")
+	data.append('email', email.value)
+	data.append('form', "conquerMarketForm")
 	data.append('test', window.localStorage.appinchina ? "test" : null)
 
 	xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
-		loading = false
-		button.innerHTML = "Submit"
+			loading = false
+			button.innerHTML = "Submit"
 	      	let response = this.responseText
+	      	closeNewsletterForm()
 	      	if(response == "success"){
-	      		name.value = ""
 	      		email.value = ""
-	      		message ? message.value = "" : null
 	      		show(information)
+	      		hide(find("#newsletter-signup"))
 	      		setTimeout(()=>{hide(information)},20000)
-	      		handleFormSubmission(form)
+	      		handleFormSubmission("conquerMarketForm")
+	      		window.localStorage.newsletterRegistered = true
+	      		//gtag_report_conversion()
 	      	}
 	      	else if(response == "test"){
-	      		name.value = ""
 	      		email.value = ""
-	      		message ? message.value = "" : null
 	      		show(information)
+	      		hide(find("#newsletter-signup"))
+	      		window.localStorage.newsletterRegistered = true
 	      		setTimeout(()=>{hide(information)},20000)
 	      	}
 	    }
 	}
 	if(!loading){
-		button.innerHTML = "<img src='https://www.appinchina.co/images/rolling.gif' style='height:80%;'/>"
+		button.innerHTML = "<img src='/images/ring.gif' style='height:80%;'/>"
 		loading = true
 		xhttp.open("POST", "https://www.appinchina.co/inc/mail_general.php", true)
 		xhttp.send(data)
 	}
+
 	return false
 }
 
@@ -394,15 +431,10 @@ function styleAsNumber(x) {
     return parts.join(".");
 }
 
-function gtag_report_conversion(url) {
- var callback = function () {
-   if (typeof(url) != 'undefined') {
-     window.location = url;
-   }
- };
- gtag('event', 'conversion', {
-     'send_to': 'AW-825668528/SATfCO3-znoQsOfaiQM',
-     'event_callback': callback
- });
- return false;
+function gtag_report_conversion(url) { 
+  let callback = function(){
+  	console.log("conversion tracked")
+  }
+  gtag('event', 'conversion', { 'send_to': 'AW-825668528/SATfCO3-znoQsOfaiQM', 'event_callback': callback }); 
+  return false; 
 }
