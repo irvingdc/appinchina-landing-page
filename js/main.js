@@ -52,7 +52,7 @@ function handleImagesVisibility(scroll){
 	if(window.location.pathname == "/" || window.location.pathname == "/test/") selectors = homeImageSelectors
 	else if (window.location.pathname == "/market/") selectors = marketImageSelectors
 	else {
-		console.log("pathname doesn't match",window.location.pathname)
+		//console.log("pathname doesn't match",window.location.pathname)
 		return null
 	}
 	console.log("selectors:",selectors)
@@ -88,17 +88,42 @@ function handleImagesVisibility(scroll){
         }, false)
     })
     loadExternalContent();
+    //addServicesListeners();
     if(find("#testimonials p")) startTestimonials();
     if(find("#clientsCarousel")) setupCarousel(70);
 
     document.addEventListener("scroll", (event)=>{
 		handleScroll(home)
+		//if(window.location.pathname.includes("services")) handleServicesScroll()
     }, false)
     setTimeout(()=>{handleScroll()},500)
-})()
+})();
+
+function handleServicesScroll(){
+	var scroll = document.documentElement.scrollTop || document.body.scrollTop
+	let el
+	for(let h of find(".service-list h3")){
+		if(h.offsetTop > scroll){
+			el = h
+			break;
+		}
+	}
+	find(".services-nav a").forEach(it=>{
+		it.href.split("#")[1] == el.id ? it.classList.add("selected") : it.classList.remove("selected")
+
+	})
+}
+
+function addServicesListeners(){
+	find(".services-nav a").forEach(it=>{
+		it.addEventListener("click", e => {
+			e.preventDefault()
+			window.scroll({ top: find("#"+it.href.split("#")[1]).offsetTop - 65, behavior: "smooth" });
+		})
+	})
+}
 
 function handleScroll(home){
-	console.log("handling scroll")
 	var scroll = document.documentElement.scrollTop || document.body.scrollTop
 	handleImagesVisibility(scroll)
 	var ul = find("nav+ul")
@@ -429,6 +454,11 @@ function styleAsNumber(x) {
 	var parts = x.toString().split(".");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     return parts.join(".");
+}
+
+function showServiceDetails(id, index){
+	find("#"+id+" .service-titles li").forEach((it,i) => i==index ? it.classList.add("selected") : it.classList.remove("selected"))
+	find("#"+id+" .service-details li").forEach((it,i) => i==index ? it.classList.add("displayed") : it.classList.remove("displayed"))
 }
 
 function gtag_report_conversion(url) { 
