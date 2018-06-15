@@ -1,0 +1,1298 @@
+.green-button,
+button[type=submit] {
+    text-shadow: 0 1px rgba(0, 0, 0, .2);
+    cursor: pointer
+}
+
+body,
+html,
+nav,
+nav img {
+    display: block;
+    position: relative
+}
+
+.green-button,
+div#aicon .results a:last-child,
+div#aicon div.results div>div>a,
+div#home div#packagesList a,
+div#market a,
+footer a,
+nav+ul a {
+    text-decoration: none
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+* {
+    transition: opacity .5s, top .5s
+}
+
+body,
+html {
+    font: 14px/1.43 "Open Sans", Helvetica, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    color: #2f2f2f
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center
+}
+
+p {
+    font-size: 20px;
+    padding: 20px
+}
+
+img {
+    display: block;
+    margin: auto
+}
+
+input,
+textarea {
+    width: 210px;
+    margin: 0 5px;
+    height: 48px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    font-size: 17px;
+    padding: 0 10px;
+    outline: 0;
+    resize: none;
+    color: #555
+}
+
+button[type=submit],
+nav+ul a {
+    font-size: 15px;
+    text-transform: uppercase
+}
+
+form.with-border input,
+form.with-border textarea {
+    border: 1px solid #d3d3d3
+}
+
+textarea {
+    height: 130px
+}
+
+button[type=submit] {
+    width: 110px;
+    margin: 0 5px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 700;
+    background-color: #8cbd3a;
+    color: #fff;
+    outline: 0
+}
+
+button[type=submit]:active,
+button[type=submit]:focus,
+button[type=submit]:hover {
+    background-color: #aeec49
+}
+
+nav,
+nav+ul {
+    background: #8cbc3f
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #bbb
+}
+
+nav {
+    width: 100%;
+    color: #fff;
+    top: 0;
+    left: 0;
+    padding-top: 15px
+}
+
+nav img {
+    width: 95px;
+    height: auto;
+    margin: 0 auto
+}
+
+nav+ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: -1px;
+    position: sticky;
+    padding: 23px 0;
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .4);
+    z-index: 80
+}
+
+nav+ul li {
+    list-style-type: none
+}
+
+nav+ul a {
+    color: #fff;
+    padding: 0 20px;
+    font-weight: 600
+}
+
+nav+ul a.contact {
+    background-color: #fff;
+    color: #8cbc3f;
+    font-weight: 700;
+    padding: 6px 11px;
+    border-radius: 20px;
+    margin: 0 10px
+}
+
+div#home div.welcome-page {
+    height: 600px;
+    position: relative;
+    overflow: hidden
+}
+
+div#home div#clientsList img,
+div#home div.welcome-page img {
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+div#home div.welcome-page .parallax {
+    background: url(../images/people-using-smartphones.jpg) 50% 50% no-repeat fixed;
+    background-size: auto 100%
+}
+
+div#home div.welcome-page p {
+    padding: 20px 20px 30px;
+    max-width: 900px;
+    margin: auto
+}
+
+div#home div#clientsList {
+    padding: 40px 20px 60px;
+    background-color: #ebebeb
+}
+
+div#home .horizontal-grid {
+    padding: 50px 20px 0
+}
+
+div#home div#packagesList {
+    padding: 0 20px 60px
+}
+
+div#home div#packagesList .title-with-line {
+    padding: 40px 5px 20px
+}
+
+div#home div#packagesList p {
+    padding: 0 20px 30px
+}
+
+div#home div#packagesList h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 20px 10px 5px
+}
+
+div#home div#extraServices h3,
+div#home div#packagesList h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 10px 5px;
+    color: #8cbd3a
+}
+
+div#home div#packagesList img {
+    height: 170px;
+    width: auto
+}
+
+div#home div#packagesList span {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    font-size: 15px
+}
+
+div#home div#packagesList li {
+    padding: 20px
+}
+
+div#home div#packagesList li:hover {
+    background: #f3f3f3;
+    border-radius: 11px;
+    cursor: pointer
+}
+
+div#home div#packagesList a {
+    color: inherit
+}
+
+div#home div#packagesList li p {
+    font-size: 16px;
+    padding: 5px 10px 20px;
+    line-height: 21.75px;
+    font-weight: 400;
+    color: #555
+}
+
+div#home div#enterprisePackage {
+    padding: 40px 0;
+    background: #ebebeb
+}
+
+div#home div#enterprisePackage>a {
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit
+}
+
+div#home div#enterprisePackage>a:hover {
+    background: #dad9d9
+}
+
+div#home div#enterprisePackage h2 {
+    font-size: 20px;
+    line-height: 1.45;
+    text-transform: uppercase;
+    color: #8cbd3a;
+    padding: 10px 10px 20px
+}
+
+div#home div#enterprisePackage img {
+    width: 200px
+}
+
+div#home div#enterprisePackage p {
+    max-width: 440px;
+    margin: auto;
+    color: #555
+}
+
+div#home div#enterprisePackage span {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    font-size: 15px;
+    text-align: center
+}
+
+div#home div#extraServices {
+    padding: 60px 20px
+}
+
+div#home div#extraServices li p {
+    font-size: 15px;
+    color: #555;
+    padding: 0
+}
+
+div#home div#extraServices h2 {
+    font-size: 19px;
+    text-transform: uppercase;
+    padding: 15px 5px 5px
+}
+
+div#home div#extraServices li {
+    padding: 20px 0 0
+}
+
+div#home div#conquerMarketForm {
+    position: relative
+}
+
+div#home div#conquerMarketForm .content {
+    padding: 80px 20px 90px
+}
+
+div#home div#conquerMarketForm .parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url(/images/people-united.jpg) center no-repeat fixed;
+    background-size: cover;
+    background-position-y: 100px
+}
+
+div#market div#marketForm,
+div#market tr {
+    position: relative
+}
+
+footer {
+    padding: 70px 20px 50px
+}
+
+footer a {
+    color: #37c
+}
+
+footer .flex a {
+    display: inline-block;
+    background: rgba(140, 187, 64, .38);
+    padding: 6px;
+    border-radius: 2px;
+    margin: 2px
+}
+
+footer img {
+    width: 18px
+}
+
+footer p {
+    font-weight: 700;
+    font-size: 15px
+}
+
+div#market div.welcome-page {
+    height: 400px;
+    position: relative;
+    overflow: hidden
+}
+
+div#market div.small-floor {
+    padding: 40px 20px;
+    height: auto
+}
+
+div#market div.welcome-page .parallax {
+    background: url(/images/people-target-market.jpg) center no-repeat fixed;
+    background-size: cover
+}
+
+div#market div.welcome-page img {
+    width: 100%;
+    display: block;
+    height: auto
+}
+
+div#market div.welcome-page p {
+    padding: 20px 20px 0;
+    max-width: 930px;
+    margin: auto
+}
+
+div#market div.welcome-page h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px
+}
+
+div#market div#marketForm .content {
+    padding: 40px 20px;
+    background: #ebebeb
+}
+
+div#market h3 {
+    padding: 30px;
+    font-size: 21px
+}
+
+div#market table {
+    width: calc(100% - 100px);
+    margin: 0 50px 20px
+}
+
+div#market tr {
+    display: block;
+    background: #f3f3f3;
+    width: calc(100% - 40px);
+    margin: auto auto 12px;
+    padding: 6px;
+    border-radius: 8px;
+    max-width: 650px;
+    left: 27px
+}
+
+div#market tr:first-child {
+    background: 0 0;
+    margin-bottom: 0;
+    color: gray;
+    font-weight: 700
+}
+
+div#market tr:first-child td:nth-child(4) {
+    top: 10px
+}
+
+div#market td:nth-child(4) {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 100px;
+    text-align: right;
+    font-weight: 700
+}
+
+div#market td:nth-child(4) img {
+    position: absolute;
+    right: 16px;
+    top: 28px;
+    width: 48px;
+    text-align: right
+}
+
+div#market td:nth-child(3) span {
+    color: gray;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 300
+}
+
+div#market td:nth-child(3) a {
+    font-weight: 700;
+    color: #000;
+    padding-right: 10px;
+    font-size: 16px
+}
+
+div#market td:nth-child(2) {
+    width: 38px;
+    padding-right: 10px
+}
+
+div#market td:first-child {
+    font-size: 28px;
+    font-weight: 700;
+    color: #b9b9b9;
+    width: 31px;
+    left: -47px;
+    text-align: right;
+    display: block;
+    top: 4px;
+    position: absolute
+}
+
+div#market tr:first-child td:nth-child(2) {
+    width: 120px
+}
+
+div#market td:nth-child(5) {
+    position: absolute;
+    right: -37px;
+    top: 17px;
+    text-align: center;
+    width: 25px
+}
+
+div#market td img {
+    max-width: 100%
+}
+
+div#market p.disclaimer {
+    font-size: 15px;
+    padding: 20px 20px 30px;
+    color: #555
+}
+
+div#market .charts-container {
+    padding-top: 20px
+}
+
+div#market .charts-container span {
+    margin: 0 20px 30px;
+    width: 290px;
+    display: inline-block;
+    position: relative
+}
+
+div#market .charts-container h3 {
+    font-size: 23px;
+    margin: 0 10px 5px;
+    padding: 10px
+}
+
+div#aicon div.welcome-page {
+    height: 400px;
+    position: relative;
+    overflow: hidden
+}
+
+div#aicon div.welcome-page .parallax {
+    background: url(/images/piracy.jpg) 50% 50% no-repeat fixed;
+    background-size: cover
+}
+
+div#aicon div.welcome-page img {
+    width: 100%;
+    display: block;
+    height: auto
+}
+
+div#aicon div.welcome-page p {
+    padding: 20px 20px 30px;
+    max-width: 900px
+}
+
+div#aicon div.results {
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: block
+}
+
+div#aicon .results>h1 {
+    font-weight: 300
+}
+
+div#aicon .results>h1 span {
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+div#aicon .results h2#totalDownloads {
+    font-size: 28px;
+    margin-bottom: 20px
+}
+
+div#aicon #loader {
+    width: 75px;
+    margin: 30px auto 50px
+}
+
+div#aicon div.results>p {
+    font-size: 20px;
+    padding: 15px
+}
+
+div#aicon div.results div>div {
+    background: #eee;
+    width: 200px;
+    height: 195px;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 15px;
+    position: relative;
+    overflow: auto
+}
+
+div#aicon img.logo-store {
+    display: block;
+    margin: 20px auto auto;
+    height: 45px;
+    width: auto
+}
+
+div#aicon div.results div>div>a {
+    margin-top: 10px;
+    display: block;
+    color: #88a237;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700
+}
+
+div#aicon div.results div p {
+    padding: 10px;
+    font-size: 15px
+}
+
+div#aicon p.bottom-link {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0
+}
+
+div#aicon .results a:last-child {
+    display: block;
+    font-size: 17px;
+    padding: 7px 5px;
+    background: #92bf3e;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    position: absolute;
+    width: calc(100% - 10px);
+    bottom: 0;
+    color: #fff!important;
+    text-transform: initial!important
+}
+
+div#about div#teamForm,
+div#aicon div#aiconForm {
+    position: relative
+}
+
+.green-button,
+.title-with-line,
+div#about h2,
+div#about h3 {
+    text-transform: uppercase
+}
+
+div#aicon div#aiconForm .content {
+    padding: 70px 20px 80px;
+    background: #ebebeb
+}
+
+div#aicon div#zeroResults {
+    width: 300px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 15px;
+    color: gray;
+    font-size: 17px;
+    background: #f5f5f5
+}
+
+div#about>div:first-child {
+    padding: 80px 20px;
+    background: #ebebeb
+}
+
+div#about ul {
+    margin-bottom: 100px
+}
+
+div#about img {
+    height: 180px
+}
+
+div#about h2 {
+    font-size: 19px;
+    padding: 15px 5px 5px
+}
+
+div#about h3 {
+    font-size: 16px;
+    margin: 0 10px 5px;
+    color: #8cbd3a
+}
+
+#about p {
+    max-width: 700px;
+    margin: auto
+}
+
+div#about>.content {
+    padding-top: 40px
+}
+
+div#about div#teamForm .content {
+    padding: 70px 20px 80px;
+    background: #ebebeb
+}
+
+div#contact div.welcome-page {
+    height: 740px;
+    position: relative;
+    overflow: hidden
+}
+
+div#contact div.welcome-page .parallax {
+    background: url(/images/great-wall.jpg) 50% 50% no-repeat fixed;
+    background-size: cover
+}
+
+div#contact form {
+    margin: 0 60px;
+    width: 340px
+}
+
+div#contact div.side {
+    width: 320px
+}
+
+div#contact span {
+    display: block;
+    margin: 15px 0
+}
+
+div#contact span img {
+    margin: 0 8px 0 0;
+    height: 20px;
+    width: auto
+}
+
+div#contact span p {
+    font-size: 15px;
+    padding: 0;
+    text-align: left
+}
+
+#privacy-policy {
+    background: #ebebeb;
+    padding: 40px 100px 70px;
+    color: #3c3c3c
+}
+
+#privacy-policy p {
+    text-align: justify;
+    font-size: 18px;
+    max-width: 1000px;
+    margin: auto
+}
+
+#privacy-policy .policy-container {
+    padding: 20px 50px 0;
+    max-width: 900px;
+    margin: auto
+}
+
+#privacy-policy .policy-container h3 {
+    padding: 20px 0 5px;
+    text-align: left;
+    font-size: 22px
+}
+
+.align-center,
+.vertical-form {
+    text-align: center
+}
+
+#privacy-policy .policy-container p {
+    font-size: 16px;
+    padding: 0;
+    line-height: 24px
+}
+
+.title-with-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px
+}
+
+.title-with-line.large {
+    font-size: 24px;
+    margin-top: 48px
+}
+
+.title-with-line:after,
+.title-with-line:before {
+    content: '';
+    display: inline-block;
+    width: 75px;
+    height: 2px;
+    background-color: #2f2f2f;
+    margin: 0 5px
+}
+
+.white-color .title-with-line:after,
+.white-color .title-with-line:before {
+    background-color: #fff
+}
+
+.flex {
+    display: flex!important;
+    align-items: center;
+    justify-content: center
+}
+
+.white-color {
+    color: #fff!important
+}
+
+.green-button {
+    color: #fff;
+    background-color: #8cbc3f;
+    font-size: 22px;
+    padding: 24px 44px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin: auto;
+    display: inline-block
+}
+
+.gray-filter,
+.light-gray-filter {
+    text-shadow: 0 0 13px rgba(0, 0, 0, .45)
+}
+
+.green-button:hover {
+    background-color: #aeec49
+}
+
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10
+}
+
+.content {
+    z-index: 20;
+    height: 100%;
+    position: relative
+}
+
+.gray-filter {
+    background: rgba(0, 0, 0, .3)
+}
+
+.light-gray-filter {
+    background: rgba(0, 0, 0, .2)
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center
+}
+
+.grid.double {
+    grid-template-columns: 460px 460px;
+    grid-gap: 0 0
+}
+
+.grid.quadruple {
+    grid-template-columns: 210px 210px 210px 210px;
+    grid-gap: 40px 20px;
+    align-items: baseline
+}
+
+.grid.quintuple {
+    grid-template-columns: 180px 180px 180px 180px;
+    grid-gap: 20px 20px
+}
+
+.grid.team {
+    grid-template-columns: 160px 160px 160px 160px 160px 160px;
+    grid-gap: 20px 15px
+}
+
+.vertical-form {
+    display: block;
+    width: 300px;
+    margin: auto
+}
+
+.vertical-form input,
+.vertical-form textarea {
+    width: calc(100% - 20px);
+    margin: 5px 0
+}
+
+.vertical-form textarea {
+    padding: 10px
+}
+
+.vertical-form button {
+    margin: 5px 0
+}
+
+.flex.top,
+.grid.top {
+    align-items: baseline
+}
+
+.flex.left {
+    justify-content: baseline
+}
+
+.align-left {
+    text-align: left
+}
+
+.invisible {
+    opacity: 0
+}
+
+.hidden {
+    display: none!important
+}
+
+.large-button {
+    width: 200px!important
+}
+
+.positive {
+    color: green
+}
+
+.negative {
+    color: red
+}
+
+nav+ul.nav-displayed {
+    top: 0
+}
+
+.open-nav-button {
+    cursor: pointer;
+    position: fixed;
+    z-index: 900;
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    top: 20px;
+    border-radius: 8px;
+    display: none;
+    background: url(/images/menu.png) center no-repeat #fff;
+    background-size: 70%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .4)
+}
+
+.open-nav-button.nav-displayed {
+    background: url(/images/close.png) center no-repeat;
+    background-size: 55%;
+    box-shadow: none
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 70;
+    top: 0
+}
+
+.overlay.nav-displayed {
+    display: block;
+    opacity: 1
+}
+
+div#market div.welcome-page p.itallic-label {
+    padding: 0;
+    font-style: italic;
+    font-size: 21px;
+    font-weight: 200
+}
+
+div#market h3.itallic-label {
+    padding: 30px 30px 25px;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 200
+}
+
+div#market h3.itallic-label a {
+    color: #37c
+}
+
+div#market h3.itallic-label.bottom-label {
+    padding: 0 30px 35px
+}
+
+div#market h3.itallic-label.top-label {
+    padding: 0 30px
+}
+
+div#market .aic-index {
+    display: none
+}
+
+p.information {
+    font-size: 14px;
+    padding: 40px 0 5px
+}
+
+p#confirmation {
+    font-size: 16px;
+    font-weight: 700;
+    position: fixed;
+    bottom: 0;
+    background: #333;
+    text-shadow: none;
+    width: calc(100% - 40px);
+    left: 0;
+    color: #fff;
+    z-index: 900;
+    display: flex;
+    align-items: center
+}
+
+p#confirmation span {
+    margin: auto
+}
+
+p#confirmation img {
+    width: 20px;
+    margin: 0 0 0 10px;
+    height: 20px;
+    cursor: pointer
+}
+
+div#home div#extraServices ul{
+	display: block;
+    align-content: baseline;
+    align-items: baseline;
+    overflow: auto;
+    margin: auto;
+    max-width: 1100px;
+}
+
+div#home div#extraServices li{
+	padding: 20px 20px 0;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+@media only screen and (max-width:1000px) {
+    .grid.quintuple {
+        grid-template-columns: 140px 140px 140px 140px;
+        grid-gap: 20px 20px
+    }
+    .grid.double {
+        grid-template-columns: 360px 360px;
+        grid-gap: 0 0
+    }
+    .grid.quadruple {
+        grid-template-columns: 170px 170px 170px;
+        grid-gap: 40px 20px;
+        align-items: baseline
+    }
+    nav+ul a {
+        padding: 0 10px
+    }
+    .grid.team {
+        grid-template-columns: 180px 180px 180px;
+        grid-gap: 20px 30px
+    }
+    div#contact form {
+        margin: 0 40px;
+        width: 320px
+    }
+    #privacy-policy {
+        padding: 240px 40px 70px
+    }
+    div#aicon div.welcome-page {
+        height: auto
+    }
+    div#aicon div.welcome-page .content {
+        padding: 40px 10px
+    }
+    div#home div#conquerMarketForm .parallax {
+        background-position-y: 50px
+    }
+}
+
+@media only screen and (max-width:740px) {
+    div#contact div#contactForm .flex.top,
+    form.flex,
+    nav+ul {
+        display: block!important
+    }
+    .open-nav-button{
+    	display: block;
+    }
+    .grid.quintuple {
+        grid-template-columns: 150px 150px;
+        grid-gap: 20px 30px
+    }
+    .grid.double {
+        grid-template-columns: 390px;
+        grid-gap: 0 0
+    }
+    .grid.quadruple {
+        grid-template-columns: 170px 170px;
+        grid-gap: 10px 20px;
+        align-items: baseline
+    }
+    form.flex {
+        width: 80%;
+        margin: auto
+    }
+    form.flex>input {
+        margin: 5px;
+        width: calc(100% - 20px)
+    }
+    form.flex>button {
+        margin: 10px
+    }
+    td,
+    th {
+        padding: 2px top: 12px
+    }
+    div#market td:nth-child(3) a {
+        padding-left: 0
+    }
+    div#market td:nth-child(4) {
+        right: 20px;
+        top: 30px
+    }
+    .grid.team {
+        grid-template-columns: 180px 180px;
+        grid-gap: 10px 10px
+    }
+    div#contact div.welcome-page {
+        height: auto
+    }
+    div#contact div#contactForm form {
+        margin: auto;
+        text-align: center
+    }
+    div#contact div#contactForm form input,
+    div#contact div#contactForm form textarea {
+        width: calc(100% - 20px);
+        margin: 5px 0
+    }
+    div#contact div#contactForm .side {
+        margin: 30px auto
+    }
+    #privacy-policy {
+        padding: 240px 10px 70px
+    }
+    nav {
+        height: 116px;
+        box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .4)
+    }
+    nav+ul {
+        position: fixed;
+        top: -540px;
+        background: #fff;
+        padding: 40px 40px 0;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, .29)
+    }
+    nav+ul a,
+    nav+ul a.contact {
+        padding: 21px;
+        color: #545454;
+        background: #fff;
+        display: block;
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: 100;
+        text-align: left;
+        margin-left: 26px;
+        border-bottom: 1px solid #dedede;
+        border-radius: 0
+    }
+    .green-button {
+        padding: 14px 24px;
+        font-size: 17px
+    }
+    div#market div.small-floor {
+        padding: 20px 20px 40px
+    }
+    div#home div#conquerMarketForm .parallax {
+        background-position-y: 0
+    }
+    .title-with-line {
+        font-size: 16px
+    }
+    .title-with-line:after,
+    .title-with-line:before {
+        width: 35px
+    }
+    div#market table {
+        width: calc(100% - 70px);
+        margin: 0 10px 20px
+    }
+    div#market .charts-container h3 {
+        padding: 0;
+        margin: 0
+    }
+    div#market td:nth-child(2) {
+        width: 45px;
+        padding: 0 9px
+    }
+    div#market td:nth-child(3) {
+        top: 12px;
+        position: relative
+    }
+    div#market td:nth-child(3) span {
+        color: gray;
+        padding-left: 0;
+        font-size: 16px;
+        font-weight: 300;
+        display: block
+    }
+    div#market td:first-child {
+        top: 21px
+    }
+    div#market td:nth-child(5) {
+        top: 30px
+    }
+}
+
+@media only screen and (max-width:440px) {
+    div#market tr:first-child {
+        display: none
+    }
+    div#market td:nth-child(3) {
+        top: 8px;
+        position: relative
+    }
+    div#market td:nth-child(4) {
+        position: relative;
+        right: 0;
+        top: -5px;
+        left: 70px;
+        width: 150px;
+        text-align: left;
+        font-weight: 700;
+        display: inline-block
+    }
+    div#market td:first-child {
+        top: 17px;
+        left: -42px
+    }
+    div#market .aic-index {
+        display: inline-block;
+        color: #82b139
+    }
+    div#market td:nth-child(2) {
+        padding-right: 11px
+    }
+}
+
+@media only screen and (max-width:390px) {
+    .grid.quintuple {
+        grid-template-columns: 130px 130px;
+        grid-gap: 15px 20px
+    }
+    .grid.double {
+        grid-template-columns: 300px;
+        grid-gap: 0 0
+    }
+    .grid.quadruple {
+        grid-template-columns: 140px 140px;
+        grid-gap: 5px 10px;
+        align-items: baseline
+    }
+    div#home div#packagesList li {
+        padding: 20px 0
+    }
+    div#market div#ranking {
+        height: 500px
+    }
+    div#market tr {
+        margin: 12px 0;
+        left: 40px
+    }
+    .grid.team {
+        grid-template-columns: 130px 130px;
+        grid-gap: 10px 10px
+    }
+    div#about img {
+        height: 140px
+    }
+    div#home div#extraServices li{
+    	width: 260px;
+    }
+}
