@@ -8,6 +8,7 @@
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 	ga('create', 'UA-2213742-7', 'auto');
+	ga('require', 'GTM-N6552WS');
 	ga('send', 'pageview');
 	</script>
 	<meta name="viewport" content="width=device-width">
@@ -16,6 +17,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   	<meta name="description" content="AppInChina helps established companies and individual app developers publish their innovative apps on the top 20 Android app stores in China." />
 	<title>AppInChina | AICON</title>
+	<link rel="canonical" href="https://www.appinchina.co/aicon/"/>
 </head>
 <body>
 	<div id="newsletter-signup">
@@ -67,7 +69,7 @@
 				<span>
 					<a href="https://cn.appinchina.co">中文</a>
 					<a href="https://es.appinchina.co">Español</a>
-					<a href="https://fr.appinchina.co">François</a>
+					<a href="https://fr.appinchina.co">Français</a>
 				</span>
 			</div>
 		</li>
@@ -92,9 +94,10 @@
 					</div>
 					<p>Don't know how to reclaim your app?</p>
 					<form class="vertical-form with-border" onsubmit="return sendForm('aiconForm')">
-						<input type="text" name="name" placeholder="Name" required/>
-						<input type="email" name="email" placeholder="Email" required/>
-						<textarea name="message" placeholder="Message" required></textarea>
+						<input type="text" name="name" placeholder="Name *" required/>
+						<input type="email" name="email" placeholder="Email *" required/>
+						<textarea name="message" placeholder="Message *" required onkeyup="textareaChanged()"></textarea>
+						<p id="formErrorMessage">The message should be at least 40 characters long.</p>
 						<button type="submit">Submit</button>
 					</form>
 					<p class="information hidden invisible">We got your message and will contact you back within 2 working days.</p>
@@ -119,7 +122,8 @@
 		</p>
 	</footer>
 	<script type="text/javascript" id="SW-05b84440-4b11-4377-9c0a-8996bbf42fea"></script>
-	<script src="https://www.appinchina.co/js/main_aicon.js"></script>
+	<script src="https://www.appinchina.co/js/main.js"></script>
+	<script src="https://www.appinchina.co/js/aicon.js"></script>
 	<script type="text/javascript">
 	    if(decodeURIComponent((RegExp("search" + '=' + '(.+?)(&|$)').exec(location.search)||[,"error"])[1]) == "error")
 	    	window.location = "/"
@@ -156,6 +160,16 @@ s.parentNode.insertBefore(b, s);})();
  src="https://www.facebook.com/tr?id=178263672818013&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+<!-- Global site tag (gtag.js) - Google AdWords: 825668528 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-825668528"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-825668528');
+</script>
+<!-- End Global site tag (gtag.js) - Google AdWords: 825668528 -->
 <script type="text/javascript">
 // --------> mouseflow
 window._mfq = window._mfq || [];
@@ -167,11 +181,6 @@ window._mfq = window._mfq || [];
 })();
 // --------> saleswings
 !function(){function a(){var a=document.createElement("script");a.type="text/javascript",a.async=1,a.src="//go.saleswingsapp.com/assets/javascripts/sw/05b84440-4b11-4377-9c0a-8996bbf42fea?enableFormTracker=true";var b=document.getElementById("SW-05b84440-4b11-4377-9c0a-8996bbf42fea");b.parentNode.insertBefore(a,b)}window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,0);window.attachEvent?window.attachEvent("onhashchange",a):window.addEventListener("hashchange",a,0);}();
-// --------> google adwords
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'AW-825668528');
 // --------> identick
 window.identick = '45'
 !function(i,d,e,n,t,c,k){i.Identick=e;i[e]||(i[e]=function(){

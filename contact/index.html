@@ -8,14 +8,16 @@
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 	ga('create', 'UA-2213742-7', 'auto');
+	ga('require', 'GTM-N6552WS');
 	ga('send', 'pageview');
 	</script>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" type="text/css" href="https://www.appinchina.co/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
 	<link rel="shortcut icon" href="https://www.appinchina.co/images/logo.png"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   	<meta name="description" content="Have a project we can help you with? Contact us now for a free consultation or to request a quote. Simply fill out the form below, and we’ll contact you within 2 working days." />
 	<title>AppInChina | Contact Us</title>
+	<link rel="canonical" href="https://www.appinchina.co/contact/"/>
 </head>
 <body>
 	<nav>
@@ -52,7 +54,7 @@
 				<span>
 					<a href="https://cn.appinchina.co">中文</a>
 					<a href="https://es.appinchina.co">Español</a>
-					<a href="https://fr.appinchina.co">François</a>
+					<a href="https://fr.appinchina.co">Français</a>
 				</span>
 			</div>
 		</li>
@@ -76,18 +78,18 @@
 						Contact us now for a free consultation or to request a quote.<br/>Simply fill out the form below, and we’ll contact you within 2 working days.</p>
 					<div class="flex top">
 						<form class="vertical-form align-left" onsubmit="return sendForm('contactForm')">
-							<input type="text" name="name" placeholder="Name" required>
-							<input type="email" name="email" placeholder="Email" required>
+							<input type="text" name="name" placeholder="Name *" required>
+							<input type="email" name="email" placeholder="Email *" required>
 							<select name="service">
 								<option value="Not selected" disabled selected>Select Service</option>
-								<option value="Freemium">Freemium Package</option>
 								<option value="Essential">Essential Package</option>
 								<option value="Professional">Professional Package</option>
 								<option value="Premium">Premium Package</option>
 								<option value="Bespoke">Bespoke Package</option>
 								<option value="Other">Other Service</option>
 							</select>
-							<textarea id="message" placeholder="Message" required></textarea>
+							<textarea id="message" placeholder="Message *" required onkeyup="textareaChanged()"></textarea>
+							<p id="formErrorMessage">The message should be at least 40 characters long.</p>
 							<button type="submit">Submit</button>
 						</form>
 						<div class="side">
@@ -161,6 +163,16 @@ s.parentNode.insertBefore(b, s);})();
  src="https://www.facebook.com/tr?id=178263672818013&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+<!-- Global site tag (gtag.js) - Google AdWords: 825668528 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-825668528"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-825668528');
+</script>
+<!-- End Global site tag (gtag.js) - Google AdWords: 825668528 -->
 <script type="text/javascript">
 // --------> mouseflow
 window._mfq = window._mfq || [];
@@ -172,11 +184,6 @@ window._mfq = window._mfq || [];
 })();
 // --------> saleswings
 !function(){function a(){var a=document.createElement("script");a.type="text/javascript",a.async=1,a.src="//go.saleswingsapp.com/assets/javascripts/sw/05b84440-4b11-4377-9c0a-8996bbf42fea?enableFormTracker=true";var b=document.getElementById("SW-05b84440-4b11-4377-9c0a-8996bbf42fea");b.parentNode.insertBefore(a,b)}window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,0);window.attachEvent?window.attachEvent("onhashchange",a):window.addEventListener("hashchange",a,0);}();
-// --------> google adwords
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'AW-825668528');
 // --------> identick
 window.identick = '45'
 !function(i,d,e,n,t,c,k){i.Identick=e;i[e]||(i[e]=function(){

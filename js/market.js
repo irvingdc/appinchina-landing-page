@@ -1,8 +1,19 @@
 function createAllCharts() { 
-	createChart("chartA", [53.2, 46.8], ["Users (731,250,000)", "Non-Users (643,280,000)"])
-	createChart("chartB", [95.1, 4.9], ["Mobile (695,310,000)", "Other (35,940,000)"])
-	createChart("chartC", [71.97, 18.89, 9.14], ["Android (500,414,000)", "iOS (131,344,000)", "Other (63,552,000)"])
+	createChart("chartA", [54.56, 45.44], ["Users (771,980,000)", "Non-Users (643,066,000)"])
+	createChart("chartB", [97.5,2.5], ["Mobile (752,650,000)", "Other (19,330,000)"])
+	createChart("chartC", [79.22, 19.27, 1.51], ["Android (596,250,000)", "iOS (145,036,000)", "Other (11,365,000)"])
 	chartsCreated = true
+}
+
+function selectRow(e){
+	if(e.classList.contains("market-row-open")){
+		e.classList.remove("market-row-open")
+	}
+	else{
+		if(document.querySelectorAll(".market-row-open"))
+			document.querySelectorAll(".market-row-open").forEach(it=>it.classList.remove("market-row-open"))
+		e.classList.add("market-row-open")
+	}
 }
 
 function createChart(id, data, labels){
