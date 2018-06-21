@@ -1609,7 +1609,6 @@ nav+ul li.languages-dropdown>div a {
 }
 .service-list .introduction{
     margin-bottom: 20px;
-    display: none;
 }
 .services .optional-extra{
     position: relative;
@@ -1632,7 +1631,7 @@ nav+ul li.languages-dropdown>div a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 550px;
 }
 .services-floors > div > div .details{
     width: 100%;
@@ -1653,7 +1652,7 @@ nav+ul li.languages-dropdown>div a {
 }
 .services-floors img {
     position: absolute;
-    height: 600px;
+    height: 550px;
     bottom: -50px;
     left: 0px;
     border-radius: 8px;

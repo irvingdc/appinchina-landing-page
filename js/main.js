@@ -433,6 +433,9 @@ function handleFormSubmission(form){
 		case "marketForm":
 			createIframe("https://www.appinchina.co?conf=4")
 		break;
+		case "servicesForm":
+			createIframe("https://www.appinchina.co?conf=1")
+		break;
 		case "aiconForm":
 			createIframe("https://www.appinchina.co?conf=5")
 		break;
