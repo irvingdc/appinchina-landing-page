@@ -37,7 +37,7 @@ html {
 }
 
 #storesResults > div h2 span a{
-	color:gray !important;
+    color:gray !important;
 }
 
 .aicon-clear {
@@ -1626,6 +1626,7 @@ nav+ul li.languages-dropdown>div a {
     display: grid;
     grid-template-columns: 60% 40%;
     overflow: hidden;
+        border-top: 2px solid whitesmoke;
 }
 .services-floors > div > div{
     display: flex;
