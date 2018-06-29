@@ -208,7 +208,7 @@ function textareaChanged(){
 	if(errorMessage) errorMessage.classList.remove("displayed")
 }
 
-function sendForm(form){
+function sendForm(form, serviceSelected){
 
 	let formElement = find("#"+form+" form")
 	let name = formElement.querySelector("input[name='name']") ? formElement.querySelector("input[name='name']") : null
@@ -235,7 +235,7 @@ function sendForm(form){
 	data.append('message', message ? message.value : "")
 	data.append('form', form)
 	data.append('source', source)
-	data.append('service', service ? service.value : "")
+	data.append('service', service ? service.value : (serviceSelected ? serviceSelected : ""))
 	data.append('test', window.localStorage.appinchina ? "test" : null)
 
 	xhttp.onreadystatechange = function() {
@@ -428,21 +428,26 @@ function toggleJob(index){
 function handleFormSubmission(form){
 	switch(form){
 		case "conquerMarketForm":
-			createIframe("https://www.appinchina.co?conf=2")
+			createIframe("https://www.appinchina.co/?conf=2")
 		break;
 		case "marketForm":
-			createIframe("https://www.appinchina.co?conf=4")
+			createIframe("https://www.appinchina.co/?conf=4")
 		break;
 		case "servicesForm":
-			createIframe("https://www.appinchina.co?conf=1")
+			createIframe("https://www.appinchina.co/?conf=6")
 		break;
 		case "aiconForm":
-			createIframe("https://www.appinchina.co?conf=5")
+			createIframe("https://www.appinchina.co/?conf=5")
 		break;
 		case "contactForm":
-			createIframe("https://www.appinchina.co?conf=1")
+			createIframe("https://www.appinchina.co/?conf=1")
 		break;
 	}
+}
+
+function showAllMedia(){
+	document.querySelectorAll("#media .hidden").forEach(it=>it.classList.remove("hidden"))
+	document.querySelector("#media .show-more").classList.add("hidden")
 }
 
 function createIframe(src){

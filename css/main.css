@@ -310,7 +310,7 @@ nav {
     padding-top: 13px;
     padding-left: 20px;
     position: fixed;
-    z-index: 300;
+    z-index: 600;
 }
 
 nav.nav-displayed {
@@ -327,7 +327,7 @@ nav+ul {
     justify-content: flex-end;
     top: 0px;
     position: fixed;
-    z-index: 200;
+    z-index: 500;
     width: 100%;
     transition: all 0.8s;
 }
@@ -619,7 +619,7 @@ div#home .content>div {
 }
 
 div#home div#conquerMarketForm .content.light-gray-filter {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.32);
 }
 
 
@@ -1532,7 +1532,7 @@ nav+ul li.languages-dropdown>div a {
     text-decoration: none;
 }
 
-#feedbackForm {
+#feedbackForm, #mediaForm {
     background: #eaeaea;
     padding: 50px 0px;
 }
@@ -1564,7 +1564,6 @@ nav+ul li.languages-dropdown>div a {
     display: block;
     text-decoration: none;
     color: #2f2f2f;
-    font-size: 15px;
 }
 .services-nav a.selected{
     font-weight: bold;
@@ -1576,16 +1575,15 @@ nav+ul li.languages-dropdown>div a {
     margin: 0px 30px;
     border-radius: 8px;
 }
-.service-list{
-    max-width: 960px;
-    width: calc(100% - 20px);
+.service-list {
+    width: 100%;
     margin: auto;
-    padding: 0px 10px 80px;
+    padding: 20px 0px 40px;
 }
 .service-list p{
     text-align: justify;
     padding: 8px;
-    font-size: 15px;
+    font-size: 16px;
 }
 .service-list p.padding-bottom{
     padding-bottom: 35px;
@@ -1604,11 +1602,14 @@ nav+ul li.languages-dropdown>div a {
     font-size: 18px;
     padding: 5px 0px 5px 10px;
     background: whitesmoke;
-    margin: 3px;
+    margin: 3px 0px;
     border-radius: 5px;
 }
 .service-list .introduction{
-    margin-bottom: 20px;
+    margin: 0px auto 30px;
+    max-width: 900px;
+    text-align: center;
+    font-size: 20px;
 }
 .services .optional-extra{
     position: relative;
@@ -1624,7 +1625,7 @@ nav+ul li.languages-dropdown>div a {
 
 .services-floors > div{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
     overflow: hidden;
         border-top: 2px solid whitesmoke;
 }
@@ -1684,6 +1685,45 @@ nav+ul li.languages-dropdown>div a {
     left: unset;
     right: 0px;
 }
+.service-details{
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+.service-details > div:nth-child(2){
+    padding: 0px 20px 0px 30px;
+    order: 1;
+}
+.service-details .image-container{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    order: 2;
+}
+.service-details img{
+    position: relative;
+    height: auto;
+    width: calc(100% - 30px);
+    margin-right: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 0px #5454548f;
+}
+.service-details{
+        display: block;
+}
+.service-details > div:nth-child(2) {
+    padding: 0px 20px;
+    width: calc(100% - 40px);
+    max-width: 900px;
+    margin: auto;
+}
+.service-details img{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+.service-details .image-container{
+    padding: 0px 20px 50px;
+}
 
 #getStartedNow{
     background: white;
@@ -1700,6 +1740,123 @@ nav+ul li.languages-dropdown>div a {
 #getStartedNow:hover{
     background: #8dbe40;
     color: white;
+}
+
+#media{
+    padding: 100px 20px 40px;
+    background: #f5f5f5;
+}
+
+#media > p{
+    padding-bottom: 0px;
+}
+
+#media .card{
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 200px calc(100% - 200px);
+    margin: 25px auto;
+    text-align: center;
+    position: relative;
+    background: white;
+    box-shadow: 0px 9px 20px #00000021;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: all 0.25s;
+    overflow: hidden;
+    height: 200px;
+}
+
+#media .card:hover{
+    box-shadow: 0px 9px 26px #00000034;
+    transform: scale(1.01);
+    z-index: 60;
+}
+
+#media .image-container, #media .image-container span{
+    background: radial-gradient(circle at 0% 0%, #e4e4e4, #656565);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+#media #media27 span{background: url(https://www.appinchina.co/images/media/media27.jpeg) no-repeat center;}
+#media #media26 span{background: url(https://www.appinchina.co/images/media/media26.jpeg) no-repeat center;}
+#media #media25 span{background: url(https://www.appinchina.co/images/media/media25.jpeg) no-repeat center;}
+#media #media24 span{background: url(https://www.appinchina.co/images/media/media24.jpg) no-repeat center;}
+#media #media23 span{background: url(https://www.appinchina.co/images/media/media23.jpg) no-repeat center;}
+#media #media22 span{background: url(https://www.appinchina.co/images/media/media22.jpg) no-repeat center;}
+#media #media21 span{background: url(https://www.appinchina.co/images/media/media21.jpg) no-repeat center;}
+#media #media20 span{background: url(https://www.appinchina.co/images/media/media20.jpeg) no-repeat center;}
+#media #media19 span{background: url(https://www.appinchina.co/images/media/media19.jpg) no-repeat center;}
+#media #media18 span{background: url(https://www.appinchina.co/images/media/media18.jpg) no-repeat center;}
+#media #media17 span{background: url(https://www.appinchina.co/images/media/media17.jpg) no-repeat center;}
+#media #media16 span{background: url(https://www.appinchina.co/images/media/media16.jpg) no-repeat center;}
+#media #media15 span{background: url(https://www.appinchina.co/images/media/media15.jpg) no-repeat center;}
+#media #media14 span{background: url(https://www.appinchina.co/images/media/media14.jpg) no-repeat center;}
+#media #media13 span{background: url(https://www.appinchina.co/images/media/media13.jpg) no-repeat center;}
+#media #media12 span{background: url(https://www.appinchina.co/images/media/media12.jpg) no-repeat center;}
+#media #media11 span{background: url(https://www.appinchina.co/images/media/media11.jpg) no-repeat center;}
+#media #media10 span{background: url(https://www.appinchina.co/images/media/media10.jpg) no-repeat center;}
+#media #media9 span{background: url(https://www.appinchina.co/images/media/media9.jpg) no-repeat center;}
+#media #media8 span{background: url(https://www.appinchina.co/images/media/media8.jpg) no-repeat center;}
+#media #media7 span{background: url(https://www.appinchina.co/images/media/media7.jpg) no-repeat center;}
+#media #media6 span{background: url(https://www.appinchina.co/images/media/media6.jpg) no-repeat center;}
+#media #media5 span{background: url(https://www.appinchina.co/images/media/media5.jpg) no-repeat center;}
+#media #media4 span{background: url(https://www.appinchina.co/images/media/media4.jpg) no-repeat center;}
+#media #media3 span{background: url(https://www.appinchina.co/images/media/media3.jpg) no-repeat center;}
+#media #media2 span{background: url(https://www.appinchina.co/images/media/media2.jpg) no-repeat center;}
+#media #media1 span{background: url(https://www.appinchina.co/images/media/media1.jpg) no-repeat center;}
+
+#media .image-container span{
+    background-size: cover !important;
+}
+
+#media .text-container h2{
+    text-align: left;
+    padding: 10px 10px 0px;
+}
+
+#media .text-container h2 span{
+    font-weight: normal;
+    color: #b5b5b5;
+}
+
+#media .text-container p{
+    text-align: justify;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#media .card > a {
+    border: none;
+    margin: 0px 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+
+#media .show-more{
+    text-align: center;
+    margin: 50px 0px 10px;
+}
+
+#media .show-more button{
+    outline: none;
+    border: 2px solid #8cbd3f;
+    font-size: 17px;
+    color: #8cbd3f;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    margin: 0px;
+    display: inline-block;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:1320px) {
@@ -1783,27 +1940,26 @@ nav+ul li.languages-dropdown>div a {
     }
     nav+ul {
         position: fixed;
-        top: -600px;
+        top: -800px;
         background: #fff;
         padding: 0px 60px 0;
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, .29)
     }
     nav+ul li>a,
     nav+ul li>a.contact {
-        padding: 21px;
+        padding: 15px 21px;
         color: #545454;
         background: #fff;
         display: block;
         text-transform: capitalize;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 100;
         text-align: left;
         margin-left: 26px;
-        border-bottom: 1px solid #dedede;
         border-radius: 0;
     }
     nav+ul li>div {
-        height: 154px;
+        height: 114px;
         width: 100%;
         padding: 0px;
     }
@@ -1831,11 +1987,10 @@ nav+ul li.languages-dropdown>div a {
         font-weight: 300;
         display: block;
         text-transform: capitalize;
-        font-size: 25px;
+        font-size: 20px;
         text-align: left;
         margin-left: 26px;
-        padding: 20px 21px;
-        border-bottom: 1px solid #dedede;
+        padding: 15px 21px;
     }
     .open-nav-button {
         display: block;
@@ -2034,6 +2189,21 @@ nav+ul li.languages-dropdown>div a {
     #newsletter-signup {
         bottom: 5px;
         right: 5px;
+    }
+    #media .card{
+        display: block;
+        height: fit-content;
+    }
+    #media .image-container, #media .image-container span{
+        width: 100%;
+        height: 180px;
+    }
+    #media .text-container h2{
+        text-align: center;
+    }
+    #media .card > a{
+        position: relative;
+        margin: 10px 10px 5px;
     }
 }
 
