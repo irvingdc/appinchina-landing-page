@@ -52,7 +52,7 @@ function handleImagesVisibility(scroll){
 	if(window.location.pathname == "/" || window.location.pathname == "/test/") selectors = homeImageSelectors
 	else if (window.location.pathname == "/market/") selectors = marketImageSelectors
 	else {
-		console.log("pathname doesn't match",window.location.pathname)
+		//console.log("pathname doesn't match",window.location.pathname)
 		return null
 	}
 	console.log("selectors:",selectors)
@@ -88,17 +88,42 @@ function handleImagesVisibility(scroll){
         }, false)
     })
     loadExternalContent();
+    //addServicesListeners();
     if(find("#testimonials p")) startTestimonials();
     if(find("#clientsCarousel")) setupCarousel(70);
 
     document.addEventListener("scroll", (event)=>{
 		handleScroll(home)
+		//if(window.location.pathname.includes("services")) handleServicesScroll()
     }, false)
     setTimeout(()=>{handleScroll()},500)
-})()
+})();
+
+function handleServicesScroll(){
+	var scroll = document.documentElement.scrollTop || document.body.scrollTop
+	let el
+	for(let h of find(".service-list h3")){
+		if(h.offsetTop > scroll){
+			el = h
+			break;
+		}
+	}
+	find(".services-nav a").forEach(it=>{
+		it.href.split("#")[1] == el.id ? it.classList.add("selected") : it.classList.remove("selected")
+
+	})
+}
+
+function addServicesListeners(){
+	find(".services-nav a").forEach(it=>{
+		it.addEventListener("click", e => {
+			e.preventDefault()
+			window.scroll({ top: find("#"+it.href.split("#")[1]).offsetTop - 65, behavior: "smooth" });
+		})
+	})
+}
 
 function handleScroll(home){
-	console.log("handling scroll")
 	var scroll = document.documentElement.scrollTop || document.body.scrollTop
 	handleImagesVisibility(scroll)
 	var ul = find("nav+ul")
@@ -183,7 +208,7 @@ function textareaChanged(){
 	if(errorMessage) errorMessage.classList.remove("displayed")
 }
 
-function sendForm(form){
+function sendForm(form, serviceSelected){
 
 	let formElement = find("#"+form+" form")
 	let name = formElement.querySelector("input[name='name']") ? formElement.querySelector("input[name='name']") : null
@@ -210,7 +235,7 @@ function sendForm(form){
 	data.append('message', message ? message.value : "")
 	data.append('form', form)
 	data.append('source', source)
-	data.append('service', service ? service.value : "")
+	data.append('service', service ? service.value : (serviceSelected ? serviceSelected : ""))
 	data.append('test', window.localStorage.appinchina ? "test" : null)
 
 	xhttp.onreadystatechange = function() {
@@ -403,18 +428,26 @@ function toggleJob(index){
 function handleFormSubmission(form){
 	switch(form){
 		case "conquerMarketForm":
-			createIframe("https://www.appinchina.co?conf=2")
+			createIframe("https://www.appinchina.co/?conf=2")
 		break;
 		case "marketForm":
-			createIframe("https://www.appinchina.co?conf=4")
+			createIframe("https://www.appinchina.co/?conf=4")
+		break;
+		case "servicesForm":
+			createIframe("https://www.appinchina.co/?conf=6")
 		break;
 		case "aiconForm":
-			createIframe("https://www.appinchina.co?conf=5")
+			createIframe("https://www.appinchina.co/?conf=5")
 		break;
 		case "contactForm":
-			createIframe("https://www.appinchina.co?conf=1")
+			createIframe("https://www.appinchina.co/?conf=1")
 		break;
 	}
+}
+
+function showAllMedia(){
+	document.querySelectorAll("#media .hidden").forEach(it=>it.classList.remove("hidden"))
+	document.querySelector("#media .show-more").classList.add("hidden")
 }
 
 function createIframe(src){
@@ -429,6 +462,11 @@ function styleAsNumber(x) {
 	var parts = x.toString().split(".");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     return parts.join(".");
+}
+
+function showServiceDetails(id, index){
+	find("#"+id+" .service-titles li").forEach((it,i) => i==index ? it.classList.add("selected") : it.classList.remove("selected"))
+	find("#"+id+" .service-details li").forEach((it,i) => i==index ? it.classList.add("displayed") : it.classList.remove("displayed"))
 }
 
 function gtag_report_conversion(url) { 

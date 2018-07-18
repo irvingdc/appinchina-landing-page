@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" manifest="https://www.appinchina.co/manifest.appcache" style="background:white;">
+<html xmlns="http://www.w3.org/1999/xhtml" manifest="https://www.appinchina.co/manifest.appcache">
 <head>
 	<script>
 	// --------> Google Optimize + Analytics Setup
@@ -15,11 +15,26 @@
 	<link rel="stylesheet" type="text/css" href="../css/new_main.css" />
 	<link rel="shortcut icon" href="https://www.appinchina.co/images/logo.png"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  	<meta name="description" content="Have a project we can help you with? Contact us now for a free consultation or to request a quote. Simply fill out the form below, and we’ll contact you within 2 working days." />
-	<title>AppInChina | Request Quote</title>
-	<link rel="canonical" href="https://www.appinchina.co/contact/"/>
+  	<meta name="description" content="Our comprehensive user acquisition solutions offer you the most effective tools to promote your app to the right audience and tap into the biggest mobile userbase in the world." />
+	<title>AppInChina | Services - User Acquisition</title>
+	<link rel="canonical" href="https://www.appinchina.co/acquisition/"/>
 </head>
 <body>
+	<div id="newsletter-signup">
+		<span onclick="openNewsletterForm()">
+			<img src="https://www.appinchina.co/images/mail.png">
+		</span>
+		<h2 onclick="openNewsletterForm()">Sign up to our newsletter</h2>
+		<form onsubmit="return sendNewsletterSignup()">
+			<div>
+				<h1>Understand the Chinese Market</h1>
+				<p>Sign up to our monthly newsletter to get exclusive & valuable insights from our experts.</p>
+				<input type="email" name="email" placeholder="Email" required>
+				<button type="submit">Submit</button>
+			</div>
+		</form>
+		<img onclick="closeNewsletterForm()" src="https://www.appinchina.co/images/close.png">
+	</div>
 	<nav>
 		<span class="open-nav-button" onclick="toggleNav()"></span>
 		<a href="/">
@@ -68,9 +83,9 @@
 			<div>
 				EN ▼
 				<span>
-					<a href="https://cn.appinchina.co/information/">中文</a>
-					<a href="https://es.appinchina.co/information/">Español</a>
-					<a href="https://fr.appinchina.co/information/">Français</a>
+					<a href="https://cn.appinchina.co/">中文</a>
+					<a href="https://es.appinchina.co/">Español</a>
+					<a href="https://fr.appinchina.co/">Français</a>
 				</span>
 			</div>
 		</li>
@@ -78,55 +93,70 @@
 	<div class="gray-filter overlay hidden invisible"></div>
 	<p class="hidden invisible confirmation" id="confirmation">
 		<span>We got your message and will contact you back within 2 working days.</span>
-		<a href="/">
-			<img src="https://www.appinchina.co/images/close-white.png" alt="Company logo">
-		</a>
+		<img src="https://www.appinchina.co/images/close-white.png" onclick="hideMessage()"/>
 	</p>
-	<div id="contact">
-		<div id="contactForm" class="white-color welcome-page">
-			<div class="parallax"></div>
-			<div class="flex content gray-filter">
+	<p class="hidden invisible confirmation" id="newsletter-confirmation">
+		<span>Thank you for signing up to our newsletter</span>
+		<img src="https://www.appinchina.co/images/close-white.png" onclick="hideMessage()"/>
+	</p>
+	<div class="services">
+		<div class="services-header">
+			<div class="flex content">
 				<div class="align-center">
-					<div class="large title-with-line">
-						<h1>Get Started</h1>
+					<div class="title-with-line">
+						<h1 id="information">User Acquisition</h1>
 					</div>
-					<p> Contact us now to request a demo of our brand new dashboard.<br/>Simply fill out the form below, and we’ll contact you within 2 working days.</p>
-					<div class="flex top">
-						<form class="vertical-form align-left" onsubmit="return sendForm('contactForm')">
-							<input type="text" name="name" placeholder="Name *" required>
-							<input type="email" name="email" placeholder="Email *" required>
-							<select name="service">
-							<option value="Not selected" disabled selected>Select Service</option>
-							<option value="Information">Information</option>
-							<option value="Distribution">Distribution</option>
-							<option value="Acquisition">User Acquisition</option>
-							<option value="Other">Other</option>
-						</select>
-							<textarea id="message" placeholder="Message *" required onkeyup="textareaChanged()"></textarea>
-							<p id="formErrorMessage">The message should be at least 40 characters.</p>
-							<button type="submit">Submit</button>
-						</form>
-						<div class="side">
-							<span class="flex left">
-								<img src="https://www.appinchina.co/images/location-icon.png" alt="Location icon"/>
-								<p>Suite 230, Shang, No.20 Xinyuanli West, Chaoyang District, Beijing, China</p>
-							</span>
-							<span class="flex left">
-								<img src="https://www.appinchina.co/images/phone-icon.png" alt="Phone icon"/>
-								<p>+86 185 1464 9241</p>
-							</span>
-							<span class="flex left">
-								<img src="https://www.appinchina.co/images/mail-icon.png" alt="Email icon"/>
-								<p><a href="mailto:info@appinchina.co" style="color:white;">info@appinchina.co</a></p>
-							</span>
-						</div>
+				</div>
+			</div>
+		</div>
+		<div class="service-list">
+			<p class="introduction">
+				Our comprehensive user acquisition solutions offer you the most effective tools to promote your app to the right audience and tap into the biggest mobile userbase in the world.
+			</p>
+			<div class="service-details">
+				<div class="image-container">
+					<img src="https://www.appinchina.co/images/dashboard-acquisition.jpg" alt="Distribution Acquisition" title="Distribution Acquisition">
+				</div>
+				<div>
+					<h3 id="paidAso">Paid ASO</h3>
+					<p>Pay for artificial user reviews and downloads on selected app stores in order to increase the discoverability and download conversion rate of your app.
+					<h3 id="appStorePromotion">App Store Promotion</h3>
+					<p>Paid promotion of your app on selected app stores.</p>
+					<h3 id="onlineAdvertising">Online Advertising</h3>
+					<p>Advertise your app across ad networks to optimize cost effectiveness.</p>
+					<h3 id="socialMediaMarketing">Social Media Marketing</h3>
+					<p>Ongoing management of your brand’s presence on the two largest Chinese social media platforms: WeChat and Weibo.</p>
+					<h3 id="influencerMarketing">Influencer Marketing</h3>
+					<p>Paid promotion of your social media content through relevant social media influencers.</p>
+					<h3 id="weChatAdvertising">WeChat Advertising</h3>
+					<p>Paid advertising of your app on WeChat Moments and official accounts.</p>
+					<h3 id="businessDevelopment">Business Development</h3>
+					<p>Contact relevant Chinese companies on behalf of your company in order to find corporate clients or acquire users through partnerships.</p>
+					<h3 id="publicRelations">Public Relations</h3>
+					<p>Public relations management of your brand in China by an experienced PR professional.</p>
+				</div>
+			</div>
+		</div>
+		<div id="servicesForm">
+			<div class="flex content">
+				<div class="align-center">
+					<div class="title-with-line">
+						<h1>Contact Us</h1>
 					</div>
+					<p>Get in touch if you're interested in this service.</p>
+					<form class="vertical-form with-border"  onsubmit="return sendForm('servicesForm','User Acquisition')">
+						<input type="text" name="name" placeholder="Name *" required/>
+						<input type="email" name="email" placeholder="Email *" required/>
+						<textarea name="message" placeholder="Message *" required onkeyup="textareaChanged()"></textarea>
+						<p id="formErrorMessage">The message should be at least 40 characters.</p>
+						<button type="submit">Submit</button>
+					</form>
 					<p class="information hidden invisible">We got your message and will contact you back within 2 working days.</p>
 				</div>
 			</div>
-					
 		</div>
 	</div>
+		
 	<footer id="footer">
 		<div class="flex">
 			<a href="http://facebook.com/appinchina" target="_blank">
@@ -143,7 +173,7 @@
 			<a href="/privacy-policy" class="action-redirect">Privacy Policy</a>
 		</p>
 	</footer>
-	<script type="text/javascript" id="SW-05b84440-4b11-4377-9c0a-8996bbf42fea"></script>
+		<script type="text/javascript" id="SW-05b84440-4b11-4377-9c0a-8996bbf42fea"></script>
 	<script src="../js/main.js"></script>
 
 <!-- LinkedIn Pixel Code -->
