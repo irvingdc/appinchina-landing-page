@@ -16,10 +16,9 @@
 	ga('create', 'UA-2213742-7', 'auto');
 	ga('require', 'GTM-N6552WS');
 	ga('send', 'pageview');
-	
 	</script>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" type="text/css" href="https://www.appinchina.co/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="./css/new_main.css" />
 	<link rel="shortcut icon" href="https://www.appinchina.co/images/logo.png"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   	<meta name="description" content="Localize: Localize your app's content and services. Upload: Upload your App APK and other creative materials. Publish: Reclaim and publish your app to the selected stores. Promote: Promote your app to more local users. Track: Track in realtime how your app is performing" />
@@ -57,6 +56,19 @@
 		</li>
 		<li>
 			<div>
+				Services
+				<span>
+					<a href="/information/">Information</a>
+					<a href="/distribution/">Distribution</a>
+					<a href="/acquisition/">User Acquisition</a>
+				</span>
+			</div>
+		</li>
+		<li>
+			<a href="/market/" class="action-redirect">The Market</a>
+		</li>
+		<li>
+			<div>
 				Info Hub
 				<span>
 					<a href="/blog/">Blog</a>
@@ -65,21 +77,24 @@
 			</div>
 		</li>
 		<li>
-			<a href="/market/" class="action-redirect">The Market</a>
+			<div>
+				Company
+				<span>
+					<a href="/about/">About Us</a>
+					<a href="/media/">Media</a>
+				</span>
+			</div>
 		</li>
 		<li>
-			<a href="/about/" class="action-redirect">About Us</a>
-		</li>
-		<li>
-			<a href="/contact/" class="contact action-redirect"><span>Request Quote</span></a>
+			<a href="/contact/" class="contact get-started action-redirect" ><span>Get Started</span></a>
 		</li>
 		<li class="languages-dropdown">
 			<div>
 				EN ▼
 				<span>
-					<a href="https://cn.appinchina.co">中文</a>
-					<a href="https://es.appinchina.co">Español</a>
-					<a href="https://fr.appinchina.co">Français</a>
+					<a href="https://cn.appinchina.co/information/">中文</a>
+					<a href="https://es.appinchina.co/information/">Español</a>
+					<a href="https://fr.appinchina.co/information/">Français</a>
 				</span>
 			</div>
 		</li>
@@ -103,19 +118,13 @@
 					</div>
 					<p>Partner with AppInChina to conquer the world's largest mobile market.</p>
 					<p class="hidden">We will help you target the top 20 Android app stores in China and allow your app to gain access to over 700M devices in the world's fastest growing mobile market.</p>
-					<form class="flex" id="searchAiconForm" onsubmit="return false">
-						<input type="text" name="appToSearch" placeholder="Is your app already in China?" id="appToSearch" onkeyup="searchGoogle()" class="not-searching" />
-						<img src="https://www.appinchina.co/images/ring.gif" id="aiconGoogleLoader"  alt="Loader" title="Loader">
-						<div id="googleResults"></div>
-						<a href="/aicon/" class="hidden invisible">Search again?</a>
-					</form>
+					<a href="/contact/">
+						<button id="getStartedNow">Get Started Now</button>
+					</a>
 				</div>
 				<img src="https://www.appinchina.co/images/china.svg" class="china-image" alt="China" title="China">
 			</div>
 		</div>
-		<a id="mobileWorldCongress" href="http://bit.ly/2kW8zg3" target="_blank" style="background:#f04444;">
-			<img src="https://www.appinchina.co/images/mobile_world_congress.jpg" alt="Mobile World Congress" title="Mobile World Congress"/>
-		</a>
 		<div id="clientsList">
 			<div class="grid quintuple horizontal-grid" id="clientsCarousel">
 				<a href="https://products.office.com/en-us/mobile/office-mobile-apps-for-android" target="_blank">
@@ -170,280 +179,96 @@
 					<img data-src="https://www.appinchina.co/images/apps/enigma.jpg" alt="Enigma" title="Enigma" class="image-hidden">
 					<p>Enigma</p>
 				</a>
+				
+				
+				<a href="https://adblockbrowser.org/" target="_blank">
+					<img data-src="https://www.appinchina.co/images/apps/adblockplus_browser.jpg" alt="Adblock Browser" title="Adblock Browser" class="image-hidden">
+					<p>Adblock Browser</p>
+				</a>
+				<a href="https://www.savonix.com/" target="_blank">
+					<img data-src="https://www.appinchina.co/images/apps/savonix.jpg" alt="Savonix" title="Savonix" class="image-hidden">
+					<p>Savonix</p>
+				</a>
+				<a href="https://www.mytheresa.com/euro_en/" target="_blank">
+					<img data-src="https://www.appinchina.co/images/apps/my_theresa.jpg" alt="Mytheresa" title="Mytheresa" class="image-hidden">
+					<p>Mytheresa</p>
+				</a>
+				<a href="https://medeavodka.com/" target="_blank">
+					<img data-src="https://www.appinchina.co/images/apps/medea_vodka.jpg" alt="Medea Vodka" title="Medea Vodka" class="image-hidden">
+					<p>Medea Vodka</p>
+				</a>
+				<a href="https://mindstronghealth.com/" target="_blank">
+					<img data-src="https://www.appinchina.co/images/apps/health_mindstrong.jpg" alt="Health by Mindstrong" title="Health by Mindstrong" class="image-hidden">
+					<p>Health by Mindstrong</p>
+				</a>
+				<a href="http://en.lineberty.com/" target="_blank">
+					<img data-src="https://www.appinchina.co/images/apps/lineberty.jpg" alt="Lineberty" title="Lineberty" class="image-hidden">
+					<p>Lineberty</p>
+				</a>
+				<a href="http://acdluxe.com/en/" target="_blank">
+					<img data-src="https://www.appinchina.co/images/apps/acdl_the_academy.jpg" alt="ACDL: The Academy" title="ACDL: The Academy" class="image-hidden">
+					<p>ACDL: The Academy</p>
+				</a>
+				<a href="https://www.suunto.com/" target="_blank">
+					<img data-src="https://www.appinchina.co/images/apps/suunto.jpg" alt="Suunto" title="Suunto" class="image-hidden">
+					<p>Suunto</p>
+				</a>
 			</div>
 			<div id="testimonials">
 				<p class="testimonial-displayed">"AppInChina’s insightful research, constructive advice and strong relationships with the local stores made the entire process go smoothly, which helped us save time and development resources and provided us with a wider space to grow and increase our brand awareness."<span>Jing Zhang, Marketing Manager at The Economist Global Business Review</span></p>
 				<p>"AppInChina helped us submit our apps to a number of top stores in China when we did not have a local team to do it. This helped us gain a strong foothold in the market and from there we were able to start building our presence in China."<span>Gina Gotthilf, Head of Marketing and International Development at Duolingo</span></p>
 				<p>"Initially I thought that distributing my app would be as simple as posting an app to Google Play or Apple App Store, however, the Chinese app ecosystem proved a lot more difficult to navigate. AppInChina helped us overcome all the obstacles we faced and allowed us to successfully enter the Chinese market."<span>Jason Crawforth, Founder of GPS Phone Tracker</span></p>
 				<p>"AppInChina helped us to localize our complex cryptocurrency website and whitepapers quickly and with complete precision. I'd highly recommend them to anyone looking to localize their presence in China."<span>Can Kisagun, Co-Founder & CPO at Enigma</span></p>
+				<p>"Upon learning that Ookla’s Speedtest app was being pirated in Chinese app stores, we engaged with the AppInChina team to identify a solution. Their app publishing expertise and extensive knowledge of the Chinese ecosystem allowed us to remove the hacked versions and ensure Chinese consumers were not being misled."<span>Adam Alexander – VP Strategic Partnerships at Ookla</span></p>
 				<ul class="flex">
 					<li onclick="showTestimonial(0)"  class="testimonial-displayed"></li>
 					<li onclick="showTestimonial(1)"></li>
 					<li onclick="showTestimonial(2)"></li>
 					<li onclick="showTestimonial(3)"></li>
+					<li onclick="showTestimonial(4)"></li>
 				</ul>
 			</div>
 		</div>
-		<div id="process">
-			<div class="title-with-line">
-				<h1>How It Works</h1>
-			</div>
-			<div class="large-process-container">
-				<div class="process-container">
-					<ul>
-						<li>
-							<img data-src="https://www.appinchina.co/images/localize.png" title="Step 1" alt="Step 1">
-						</li>
-						<li>
-							<img data-src="https://www.appinchina.co/images/step1.png" title="Step 2" alt="Step 2">
-						</li>
-						<li>
-							<img data-src="https://www.appinchina.co/images/step2.png" title="Step 3" alt="Step 3">
-						</li>
-						<li>
-							<img data-src="https://www.appinchina.co/images/promote.png" title="Step 5" alt="Step 5">
-						</li>
-						<li>
-							<img data-src="https://www.appinchina.co/images/step3.png" title="Step 4" alt="Step 4">
-						</li>
-					</ul>
-					<ul>
-						<li>
-							<p><span>Localize:</span>Localize your app's content and services</p>
-						</li>
-						<li>
-							<p><span>Upload:</span>Upload your app APK and other creative materials</p>
-						</li>
-						<li>
-							<p><span>Publish:</span>Reclaim and publish your app to the selected stores</p>
-						</li>
-						<li>
-							<p><span>Promote:</span>Promote your app to more local users</p>
-						</li>
-						<li>
-							<p><span>Track:</span>Track in realtime how your app is performing</p>
-						</li>
-					</ul>
-				</div>
-				<div id="system" class="dashboard">
-					<img data-src="https://www.appinchina.co/images/dashboard-screenshot.png" title="System Screenshot" alt="System Screenshot"/>
-					<div class="flex">
-						<ul>
-							<h1>Dashboard</h1>
-							<li>Check your app's status on all of the stores</li>
-							<li>Follow your app's total downloads</li>
-							<li>Search your app's distribution history</li>
-							<li>See your app's live pages on each app store</li>
-						</ul>
+
+		<div class="services-floors">
+			<div class="distribution-floor">
+				<div>
+					<div class="details">
+						<h2>Widen Your Audience</h2>
+						<p>AppInChina can publish your app to the top 20 Chinese app stores. Our dashboard can guide you along the whole distribution process, through testing, translation and integration consulting, software copyright certificate application, publishing, reclaiming and updating. When your app is successfully uploaded, you can monitor your app’s performance and perform organic ASO on each store.</p>
+						<a href="/distribution/">Learn More</a>
 					</div>
 				</div>
-			</div>
-			<div id="packages"></div>
-		</div>
-		<div id="packagesList">
-			<div class="title-with-line">
-				<h1>Packages</h1>
-			</div>
-			<p>Select one of our packages and we'll handle the bureaucracy of multi-store distribution.</p>
-			<ul class="grid triple">
-				<li>
-					<h2>Essential</h2>
-					<img data-src="https://www.appinchina.co/images/packages/essential.png" alt="Essential Package" title="Essential Package">
-					<h3><span><b>5</b> app stores</span> / year</h3>
-					<table>
-						<tr>
-							<td>60% Market Coverage (Approx.)</td>
-						</tr>
-						<tr>
-							<td>Distribution & 12 Updates 
-							<i>i
-								<span>Applying for copyright certification, publishing your app to 5 of the top 20 Android stores, updating your app when a new version is released.</span>
-							</i>
-							</td>
-						</tr>
-						<tr>
-							<td>Dashboard
-								<i>i
-									<span>Providing access to our dashboard to allow you to track your app’s performance.</span>
-								</i>
-							</td>
-						</tr>
-						<tr>
-							<td>Reclaiming
-								<i>i
-									<span>Removing all unauthorized copies of your app from these stores.</span>
-								</i>
-							</td>
-						</tr>
-						<tr>
-							<td>Localization
-								<i>i
-									<span>Manual testing of your app on different devices, translating all of your app's content into Mandarin Chinese and advising on local service integration (ad networks, location services, video hosting platforms and social media networks).</span>
-								</i>
-							</td>
-						</tr>
-						<tr class="empty-row">
-							<td></td>
-						</tr>
-						<tr class="empty-row">
-							<td></td>
-						</tr>
-						<tr class="empty-row">
-							<td></td>
-						</tr>
-					</table>
-					<a href="/contact" class="quote-button">Get Started</a>
-				</li>
-				<li>
-					<h2>Professional</h2>
-					<img data-src="https://www.appinchina.co/images/packages/professional.png" alt="Professional Package" title="Professional Package">
-					<h3><span><b>10</b> app stores</span> / year</h3>
-					<table>
-						<tr>
-							<td>80% Market Coverage (Approx.)</td>
-						</tr>
-						<tr>
-							<td>Distribution & 12 Updates
-								<i>i
-									<span>Applying for copyright certification, publishing your app to 10 of the top 20 Android stores, updating your app when a new version is released.</span>
-								</i>
-							</td>
-						</tr>
-						<tr>
-							<td>Dashboard
-								<i>i
-									<span>Providing access to our dashboard to allow you to track your app’s performance.</span>
-								</i>
-							</td>
-						</tr>
-						<tr>
-							<td>Reclaiming
-								<i>i
-									<span>Removing all unauthorized copies of your app from these stores.</span>
-								</i>
-							</td>
-						</tr>
-						<tr>
-							<td>Localization
-								<i>i
-									<span>Manual testing of your app on different devices, translating all of your app's content into Mandarin Chinese and advising on local service integration (ad networks, location services, video hosting platforms and social media networks).</span>
-								</i>
-							</td>
-						</tr>
-						<tr class="empty-row">
-							<td></td>
-						</tr>
-						<tr class="empty-row">
-							<td></td>
-						</tr>
-						<tr class="empty-row">
-							<td></td>
-						</tr>
-					</table>
-					<a href="/contact" class="quote-button">Get Started</a>
-				</li>
-				<li>
-					<h2>Premium</h2>
-					<img data-src="https://www.appinchina.co/images/packages/premium.png" alt="Premium Package" title="Premium Package">
-					<h3><span><b>15</b> app stores</span> / year</h3>
-					<table>
-						<tr>
-							<td>90% Market Coverage (Approx.)</td>
-						</tr>
-						<tr>
-							<td>Distribution & 12 Updates 
-								<i>i
-									<span>Applying for copyright certification, publishing your app to 15 of the top 20 Android stores, updating your app when a new version is released.</span>
-								</i>
-							</td>
-						</tr>
-						<tr>
-							<td>Dashboard
-								<i>i
-									<span>Providing access to our dashboard to allow you to track your app’s performance.</span>
-								</i>
-							</td>
-						</tr>
-						<tr>
-							<td>Reclaiming
-								<i>i
-									<span>Removing all unauthorized copies of your app from these stores.</span>
-								</i>
-							</td>
-						</tr>
-						<tr>
-							<td>Localization
-								<i>i
-									<span>Manual testing of your app on different devices, translating all of your app's content into Mandarin Chinese and advising on local service integration (ad networks, location services, video hosting platforms and social media networks).</span>
-								</i>
-							</td>
-						</tr>
-						<tr>
-							<td>Monitoring
-								<i>i
-									<span>Producing monthly download reports, activation reports, user review reports and revenue reports.</span>
-								</i>
-							</td>
-						</tr>
-						<tr>
-							<td>IP Protection
-								<i>i
-									<span>Trademark the name and logo of your app in English and Chinese.</span>
-								</i>
-							</td>
-						</tr>
-						<tr>
-							<td>Account Management
-								<i>i
-									<span>A dedicated account manager responsible for your app.</span>
-								</i>
-							</td>
-						</tr>
-					</table>
-					<a href="/contact" class="quote-button">Get Started</a>
-				</li>
-			</ul>
-		</div>
-		<div id="enterprisePackage" class="flex">
-			<div>
-				<div class="title-with-line">
-					<h1>Bespoke</h1>
+				<div class="image-container">
+					<img src="https://www.appinchina.co/images/dashboard-distribution.jpg" alt="Dashboard Distribution" title="Dashboard Distribution">
 				</div>
-				<h2>Customized <span>/ year</span></h2>
-				<img data-src="https://www.appinchina.co/images/packages/bespoke.png" alt="Enterprise Package" title="Enterprise Package">
-				<p>This build-it-yourself package can be personalized to cover anywhere between 1 and 15 app stores and include any of our extra services.</p>
-				<a href="/contact" class="quote-button">Request quote</a>
+			</div>
+			<div class="information-floor">
+				<div>
+					<div class="details">
+						<h2>Understand Market Potential</h2>
+						<p>Optimizing your app’s performance in the Chinese market isn’t a straightforward task. AppInChina can provide an overview of your app’s current status, an app user summary and a comparison with similar existing apps. After understanding your app’s potential, you can automatically test your app to verify its functionality in China.</p>
+						<a href="/information/">Learn More</a>
+					</div>
+				</div>
+				<div class="image-container">
+					<img src="https://www.appinchina.co/images/dashboard-information.jpg" alt="Dashboard Information" title="Dashboard Information">
+				</div>
+			</div>
+			<div class="acquisition-floor">
+				<div>
+					<div class="details">
+						<h2>Acquire New Users</h2>
+						<p>AppInChina can connect your app with over 750 million users. Our multifaceted promotion boosts your app’s userbase through paid ASO, app store promotion, online advertising and social media marketing. Then you can oversee our work, measure our performance and watch your app’s digital presence increase.</p>
+						<a href="/acquisition/">Learn More</a>
+					</div>
+				</div>
+				<div class="image-container">
+					<img src="https://www.appinchina.co/images/dashboard-acquisition.jpg" alt="Dashboard Acquisition" title="Dashboard Acquisition">
+				</div>
 			</div>
 		</div>
-		<div id="extraServices">
-			<div class="title-with-line">
-				<h1>Extra Services</h1>
-			</div>
-			<p>Choose from our additional services to help your app succeed in China after distribution.</p>
-			<ul class="extra-services">
-				<li class="flex">
-					<img data-src="https://www.appinchina.co/images/extraServices/PNG/promotion.png" alt="Promotion" title="Promotion">
-					<div>
-						<h2>Promotion</h2>
-						<p>App store promotion, social media promotion, WeChat promotion, media promotion and brand partnerships.</p>
-					</div>
-				</li>
-				<li class="flex">
-					<img data-src="https://www.appinchina.co/images/extraServices/PNG/monetization.png" alt="Monetization" title="Monetization">
-					<div>
-						<h2>Monetization</h2>
-						<p>Adapting your app's revenue model to optimize your app's earning potential.</p>
-					</div>
-				</li>
-				<li class="flex">
-					<img data-src="https://www.appinchina.co/images/extraServices/PNG/testing.png" alt="Monitoring" title="Monitoring">
-					<div>
-						<h2>Live-Testing</h2>
-						<p>Testing your app with a panel of Chinese users to understand your app's market potential.</p>
-					</div>
-				</li>
-			</ul>
-		</div>
+		
 		<div id="conquerMarketForm" class="white-color">
 			<div class="parallax background-hidden"></div>
 			<div class="flex content light-gray-filter" id="newsletter">
@@ -479,8 +304,8 @@
 		</p>
 	</footer>
 	<script type="text/javascript" id="SW-05b84440-4b11-4377-9c0a-8996bbf42fea"></script>
-	<script src="https://www.appinchina.co/js/main.js"></script>
-	<script src="https://www.appinchina.co/js/aicon.js" async></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/aicon.js" async></script>
 
 <!-- LinkedIn Pixel Code -->
 <script type="text/javascript">
@@ -519,7 +344,6 @@ s.parentNode.insertBefore(b, s);})();
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-825668528');
 </script>
 <!-- End Global site tag (gtag.js) - Google AdWords: 825668528 -->
@@ -540,7 +364,6 @@ window.identick = '45'
 (i[e].q=i[e].q||[]).push(arguments)});i[e].l=+new Date;c=d.createElement(n);
 k=d.getElementsByTagName(n)[0];c.src=t;k.parentNode.insertBefore(c,k)}
 (window,document,'idntk','script','//cdn.identick.com/intel.js');
-
 console.log("finished loading HTML")
 </script>
 
