@@ -1,215 +1,210 @@
-div#home form#searchAiconForm input{
-	padding-right: 50px;
-    width: 310px !important;
-    border: 1px solid white;
-    margin: 0px;
-    color: #bbbbbd;
+.Loader,
+.Loader:before,
+.Loader:after {
+  border-radius: 50%;
 }
-div#home form#searchAiconForm input.not-searching{
-	background: url(/images/search.png) no-repeat right;
-    background-color: #ffffff;
-    background-size: auto 50%;
-    background-position-x: 96.5%;
+.Loader {
+  color: #8dbd40;
+  font-size: 11px;
+  text-indent: -99999em;
+  margin: 0 auto;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em;
+  transform: translateZ(0);
 }
-form#searchAiconForm{
-	width: auto;
-    display: inline-block !important;
-    position: relative;
+.Loader:before,
+.Loader:after {
+  position: absolute;
+  content: '';
 }
-form#searchAiconForm input{
-	padding-right: 50px;
-	width: 210px !important;
+.Loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: whitesmoke;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  transform-origin: 5.2em 5.1em;
+  animation: load2 1.33s infinite ease 1s;
 }
-div#aicon div.welcome-page img#aiconGoogleLoader, img#aiconGoogleLoader{
-	display: none;
-    width: 30px;
-    height: 30px;
-	position: absolute;
-	top: 10px;
-	right: 20px;
+.Loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: whitesmoke;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 5.1em;
+  transform-origin: 0px 5.1em;
+  animation: load2 1.33s infinite ease;
 }
-div#googleResults{
+.Inverse {
+  color:whitesmoke;
+}
+.Inverse:before, .Inverse:after{
+  background: #8dbd40;
+}
+@-webkit-keyframes load2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#aicon{
+    display: flex;
+    min-height: calc(100vh - 215px);
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    background: whitesmoke;
+}
+.aicon-card{
     background: white;
-    margin: 2px 0px;
-    position: absolute;
+    padding: 40px;
+    margin: 30px 0px;
+    box-shadow: 0px 5px 30px 0px #80808057;
+    border-radius: 2px;
     width: 100%;
-    box-shadow: 0px 0px 8px 0px #0000005c;
-    border-radius: 4px;
-    overflow: hidden;
-    z-index: 35;
+    max-width: 800px;
 }
-#googleResults img{
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-	border-radius: 7px;
-}
-#googleResults > div{
+.aicon-search-details{
 	display: flex;
-	padding: 5px;
-	background-color: white;
+    text-align: center;
+}
+.aicon-search-details span:nth-child(1){
+	font-size: 25px;
+    background: #b0de88;
+    display: inline-block;
+    color: white;
+    padding: 5px 15px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+.aicon-search-details span:nth-child(2){
+	width: 100%;
+    font-weight: 500;
+    background: #c7c7c7;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 25px;
+    text-align: center;
+}
+.aicon-results{
+	display: table !important;
+	border-collapse: collapse;
+	border-left: 1px solid #d0d0d0;
+	border-right: 1px solid #d0d0d0;
+	width: 100%;
+}
+.aicon-results tr:first-child{
+	background: gray;
+}
+.aicon-results th{
+	color: white;
+}
+.aicon-results a{
+	text-decoration: none;
+	color: rgb(128,174,3);
+	font-weight: bold;
 	cursor: pointer;
 }
-#googleResults > div:hover{
-	background-color: #eaeaea;
+.aicon-results a:hover{
+	text-decoration: underline;
 }
-#googleResults > div > div{
-	width: calc(100% - 50px);
+.aicon-results td{
+	border-bottom: 1px solid #d0d0d0;
 }
-#googleResults span{
-	display: block;
-	font-size: 15px;
-	color: #222;
-	text-shadow: none;
-	text-align: left;
-	padding-left: 5px;
+.aicon-results td, .aicon-results th{
+	text-align: center;
+	padding: 8px;
 }
-#googleResults span:nth-child(2){
-	color:#777;
-	font-size: 13px;
+.align-left{
+	text-align: left !important;
 }
-#storesResults{
-	overflow: hidden;
-	height: 0px;
-	transition: all .8s;
-	padding-top: 70px;
-	height: 1240px;
-}
-#storesResults table{
-	display: block;
-    margin: 40px auto;
-    width: 690px;
-    border-collapse: collapse;
-    position: relative;
-}
-#storesResults tbody{
-	display: block;
-    width: 100%;
-    position: relative;
-}
-#storesResults tr{
-	margin: 6px 0px;
-    display: block;
-    width: 100%;
-    background: whitesmoke;
-    border-radius: 10px;
-    position: relative;
-}
-#storesResults tr:first-child{
-	background: transparent;
-	color: gray;
-}
-#storesResults tr:first-child th:first-child{
-	text-align: left;
-}
-#storesResults tr:first-child th:last-child{
-	text-align: right;
-}
-#storesResults td:last-child{
-	text-align: right;
-	padding-right: 10px;
-}
-#storesResults td, #storesResults th{
-	width: calc(33.33% - 10px);
-    text-align: center;
-    position: relative;
-    display: inline-block;
-}
-#storesResults td:first-child a{
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-	font-weight: 700;
-    color: #444;
-    font-size: 16px;
-}
-#storesResults td:nth-child(2) a{
+.aicon-found{
+	background: #fd8181;
+	padding: 3px 8px;
 	color: white;
-    background: #f76464;
-    padding: 8px 10px;
-    text-decoration: none;
-    border-radius: 3px;
-    margin: auto;
-    display: block;
-    text-align: center;
-    width: 120px;
+	border-radius: 4px;
 }
-#storesResults td:first-child img{
-	width: 40px;
-    height: 40px;
-    display: block;
-    margin: 8px;
+.aicon-not-found{
+	background: #a2cdf3;
+	padding: 3px 8px;
+	color: white;
+	border-radius: 4px;
 }
-#storesResults td:nth-child(2) img{
-	width: 30px;
-	height: 30px;
-	display: block;
-	margin:auto;
+.aicon-hidden{
+    display:none !important;
 }
-#storesResults > div p{
-	padding: 0px;	
+.MainInfo{
+	background: aliceblue;
+	margin-bottom: 20px;
+	padding: 15px;
+	border-radius: 3px;
+	text-align: left;
 }
-#storesResults > div h2{
-	padding: 40px 10px 10px;
+.MainInfo b{
+	font-weight: 700;
 }
-#storesResults > div p span{
-	font-weight: bold;
-    margin: 10px;
-    font-size: 24px;
-    color: #8cbd3f;
+.MainInfo h2{
+	padding: 0px 0px 15px;
+	text-align:left;
 }
-#storesResults > div h2 span{
-	text-transform: capitalize;
+.MainInfo h3{
+	padding: 5px;
+    font-weight: 500;
+    text-align:left;
 }
-form#searchAiconForm a{
-	font-size: 20px;
-    width: 200px;
-    padding: 6px 0px;
-    display: block;
-    border-radius: 50px;
-    margin: auto;
-    color: white;
-    background: #8cbd3f;
-    font-weight: bold;
-    position: absolute;
-    bottom: 0px;
-    left: calc(50% - 100px);
-    text-shadow: none;
-    text-decoration: none;
+.TableTitle{
+	margin: 10px 0px;
+	text-align: left;
 }
-div.welcome-page{
-	overflow: visible !important; 
-	z-index:60;
+.aicon-label{
+    display:none;
 }
-@media only screen and (max-width:740px) {
-	#storesResults table{
-		width: 440px;
-	}
-	#storesResults td:nth-child(2) a{
-		padding: 8px 0px;
-		width: 100px;
-	}
-}
-@media only screen and (max-width:550px) {
-	#storesResults table{
-		width: 350px;
-		margin: auto;
-	}
-	#storesResults td:last-child, #storesResults tr:first-child th:last-child{
-		width: calc(20% - 10px);
-	}
-	#storesResults td, #storesResults th{
-		width: calc(40% - 10px);
-	}
-}
-@media only screen and (max-width:390px) {
-	form#searchAiconForm{
-        width: 100% !important;
+
+@media (max-width: 770px){
+    .aicon-label{
+        display:inline-block;
     }
-    div#home form#searchAiconForm input{
-        width: calc(100% - 60px) !important;
+    .aicon-results tr, .aicon-results td, .aicon-results{
+        display: block;
+        width: 100%;
+    }
+    .aicon-results tr:first-child{
+        display: none;
+    }
+    .aicon-results{
+        border-top: 1px solid #d0d0d0;
+    }
+    .aicon-results td{
+        border-bottom: 0px;
+        text-align: left;
+        padding: 1px;
+    }
+    .aicon-results tr{
+    	border-bottom: 1px solid #d0d0d0;
+        width: calc(100% - 24px);
+        padding: 12px;
+    }   
+    .aicon-results tr:nth-child(even){
+        background: #f7f7f7;
     }
 }
+
 
 
 

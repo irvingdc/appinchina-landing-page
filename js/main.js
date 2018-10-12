@@ -49,13 +49,12 @@ var marketImageSelectors = 	[
 
 function handleImagesVisibility(scroll){
 	let selectors
-	if(window.location.pathname == "/" || window.location.pathname == "/test/") selectors = homeImageSelectors
-	else if (window.location.pathname == "/market/") selectors = marketImageSelectors
+	if(window.location.pathname == "/" || window.location.pathname == "/test/") selectors = homeImageSelectors
+	else if (window.location.pathname.includes("/market")) selectors = marketImageSelectors
 	else {
 		//console.log("pathname doesn't match",window.location.pathname)
 		return null
 	}
-	console.log("selectors:",selectors)
 	selectors.filter(it=>{return !it.displayed}).forEach(obj=>{
 		let elements = document.querySelectorAll(obj.selector)
 		elements.forEach(el=>{
@@ -171,6 +170,7 @@ function switchTestimonial(testimonialIndex){
 	find("#testimonials p").forEach((it,index)=>{
 		it.classList.remove("testimonial-displayed")
 		if(index == testimonialIndex) setTimeout(()=>{ it.classList.add("testimonial-displayed")},600)
+		else setTimeout(()=>{ it.classList.remove("testimonial-displayed")},600)
 	})
 	find("#testimonials li").forEach((it,index)=>{ 
 		it.classList.remove("testimonial-displayed")
@@ -252,6 +252,8 @@ function sendForm(form, serviceSelected){
 	      		setTimeout(()=>{hide(information)},20000)
 	      		handleFormSubmission(form)
 	      		gtag_report_conversion()
+	      		bing_report_conversion()
+	      		yahoo_report_conversion()
 	      	}
 	      	else if(response == "test"){
 	      		name ? name.value = "" : null
@@ -430,6 +432,9 @@ function handleFormSubmission(form){
 		case "conquerMarketForm":
 			createIframe("https://www.appinchina.co/?conf=2")
 		break;
+	    case "getStartedForm":
+			createIframe("https://www.appinchina.co/?conf=7")
+		break;
 		case "marketForm":
 			createIframe("https://www.appinchina.co/?conf=4")
 		break;
@@ -468,11 +473,37 @@ function showServiceDetails(id, index){
 	find("#"+id+" .service-titles li").forEach((it,i) => i==index ? it.classList.add("selected") : it.classList.remove("selected"))
 	find("#"+id+" .service-details li").forEach((it,i) => i==index ? it.classList.add("displayed") : it.classList.remove("displayed"))
 }
-
+function selectRow(e){
+	if(e.classList.contains("market-row-open")){
+		e.classList.remove("market-row-open")
+	}
+	else{
+		if(document.querySelectorAll(".market-row-open"))
+			document.querySelectorAll(".market-row-open").forEach(it=>it.classList.remove("market-row-open"))
+		e.classList.add("market-row-open")
+	}
+}
 function gtag_report_conversion(url) { 
   let callback = function(){
   	console.log("conversion tracked")
   }
   gtag('event', 'conversion', { 'send_to': 'AW-825668528/SATfCO3-znoQsOfaiQM', 'event_callback': callback }); 
   return false; 
+}
+function yahoo_report_conversion(){
+    window.dotq = window.dotq || [];
+    window.dotq.push(
+    {
+      'projectId': '10000',
+      'properties': {
+        'pixelId': '10061744',
+        'qstrings': {
+          'et': 'custom',
+          'el': 'Qualified Lead'
+        }
+    } } );
+}
+function bing_report_conversion(){
+    window.uetq = window.uetq || [];
+    window.uetq.push({ 'el': 'Qualified Lead' });
 }

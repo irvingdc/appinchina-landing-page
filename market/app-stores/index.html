@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background:white;">
+<head>
+	<script>
+	// --------> Google Optimize + Analytics Setup
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-2213742-7', 'auto');
+	ga('require', 'GTM-N6552WS');
+	ga('send', 'pageview');
+	</script>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="../../css/new_main.css" />
+	<link rel="shortcut icon" href="https://www.appinchina.co/images/logo.png"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<meta name="description" content="In China, there are over 400 Android app stores and every month, we rank the top 20 Chinese Android app stores taking into account the percentage of Android users visiting each store at least once per month." />
+	<title>Top 20 Chinese Android App Stores - AppInChina | The Market</title>
+	<link rel="canonical" href="https://www.appinchina.co/market/app-stores/"/>
+</head>
+<body>
+	<div id="newsletter-signup">
+		<span onclick="openNewsletterForm()">
+			<img src="https://www.appinchina.co/images/mail.png">
+		</span>
+		<h2 onclick="openNewsletterForm()">Sign up to our newsletter</h2>
+		<form onsubmit="return sendNewsletterSignup()">
+			<div>
+				<h1>Understand the Chinese Market</h1>
+				<p>Sign up to our monthly newsletter to get exclusive & valuable insights from our experts.</p>
+				<input type="email" name="email" placeholder="Email" required>
+				<button type="submit">Submit</button>
+			</div>
+		</form>
+		<img onclick="closeNewsletterForm()" src="https://www.appinchina.co/images/close.png">
+	</div>
+	<nav>
+		<span class="open-nav-button" onclick="toggleNav()"></span>
+		<a href="/">
+			<img src="https://www.appinchina.co/images/logo-white.png" alt="Company logo">
+		</a>
+	</nav>
+	<ul class="always-green">
+		<li id="home-button">
+			<a href="/" class="action-redirect">Homepage</a>
+		</li>
+		<li>
+			<div>
+				Services
+				<span>
+					<a href="/information/">Information</a>
+					<a href="/localization/">Localization</a>
+					<a href="/distribution/">Distribution</a>
+					<a href="/acquisition/">User Acquisition</a>
+				</span>
+			</div>
+		</li>
+		<li>
+			<div>
+				The Market
+				<span>
+					<a href="/market/app-stores/">App Stores</a>
+					<a href="/market/apps/">Apps</a>
+					<a href="/market/device-brands/">Device Brands</a>
+					<a href="/market/operating-systems/">Operating Systems</a>
+					<a href="/market/user-locations/">User Locations</a>
+				</span>
+			</div>
+		</li>
+		<li>
+			<a href="/blog/">Resources</a>
+		</li>
+		<li>
+			<div>
+				Company
+				<span>
+					<a href="/about/">About Us</a>
+					<a href="/success/">Success Stories</a>
+					<a href="/media/">Media</a>
+				</span>
+			</div>
+		</li>
+		<li>
+			<a href="/contact/" class="contact get-started action-redirect" ><span>Get Started</span></a>
+		</li>
+		<li class="languages-dropdown">
+			<div>
+				EN ▼
+				<span>
+					<a href="https://cn.appinchina.co/market/">中文</a>
+				</span>
+			</div>
+		</li>
+	</ul>
+	<div class="gray-filter overlay hidden invisible"></div>
+	<p class="hidden invisible confirmation" id="confirmation">
+		<span>Thank you for your message. We'll reply back to you within a maximum of 2 working days.</span>
+		<img src="https://www.appinchina.co/images/close-white.png" onclick="hideMessage()"/>
+	</p>
+	<p class="hidden invisible confirmation" id="newsletter-confirmation">
+		<span>Thank you for signing up to our newsletter</span>
+		<img src="https://www.appinchina.co/images/close-white.png" onclick="hideMessage()"/>
+	</p>
+	<div id="market">
+		<div class="white-color welcome-page" id="ranking">
+			<div class="parallax background-hidden"></div>
+			<div class="flex content gray-filter">
+				<div class="align-center">
+					<div class="title-with-line">
+						<h1>Top 20 Chinese Android App Stores</h1>
+					</div>
+					<p>In China, there are over 400 Android app stores and every month, we rank the top 20 Chinese Android app stores taking into account the percentage of Android users visiting each store at least once per month.</p>
+				</div>
+			</div>
+		</div>
+		<div id="storesList">
+			<h3 class="itallic-label">August 1st, 2018</h3>
+			<table>
+				<tr>
+					<td></td>
+					<td>App Stores</td>
+					<td></td>
+					<td>MAU</td>
+				</tr>
+				<tr onclick="selectRow(this)" class="market-row-open">
+					<td>1</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/tencent.png"></td>
+					<td>Tencent MyApp</td>
+					<td><span class="aic-index">MAU: </span> 13.51%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 腾讯应用宝</p>
+						<p>Parent Company: Tencent</p>
+						<p>Company Type: Online Services</p>
+						<p>Special Requirements: Must submit Software Copyright Certificate.</p>
+						<p>Official Website: <a href="http://android.myapp.com/" target="_blank">http://android.myapp.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>2</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/360.png"></td>
+					<td>360 Mobile Assistant</td>
+					<td><span class="aic-index">MAU: </span> 9.63%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 360手机助手</p>
+						<p>Parent Company: Qihoo 360</p>
+						<p>Company Type: Internet Security/Software</p>
+						<p>Special Requirements: Must submit Software Copyright Certificate.</p>
+						<p>Official Website: <a href="http://zhushou.360.cn/" target="_blank">http://zhushou.360.cn/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>3</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/baidu.png"></td>
+					<td>Baidu Mobile Assistant</td>
+					<td><span class="aic-index">MAU: </span> 8.55%</td>
+					<td class="positive">1▲</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 百度手机助手</p>
+						<p>Parent Company: Baidu</p>
+						<p>Company Type: Internet Search Engine/Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://as.baidu.com/" target="_blank">http://as.baidu.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>4</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/huawei.png" class="img5"></td>
+					<td>Huawei App Market</td>
+					<td><span class="aic-index">MAU: </span> 8.41%</td>
+					<td class="positive">1▲</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 华为应用市场</p>
+						<p>Parent Company: Huawei</p>
+						<p>Company Type: Tech Hardware/Software</p>
+						<p>Special Requirements: Must submit Software Copyright Certificate.</p>
+						<p>Official Website: <a href="http://app.hicloud.com/" target="_blank">http://app.hicloud.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>5</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/oppo.png"></td>
+					<td>Oppo Software Store</td>
+					<td><span class="aic-index">MAU: </span> 8.30%</td>
+					<td class="negative">2▼</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: OPPO软件商店</p>
+						<p>Parent Company: BBK Electronics</p>
+						<p>Company Type: Mobile Hardware/Software</p>
+						<p>Special Requirements: Must submit Software Copyright Certificate.</p>
+						<p>Official Website: <a href="https://store.oppomobile.com/" target="_blank">https://store.oppomobile.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>6</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/miui.png"></td>
+					<td>MIUI App Store</td>
+					<td><span class="aic-index">MAU: </span> 6.24%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 小米应用商店</p>
+						<p>Parent Company: Xiaomi</p>
+						<p>Company Type: Tech Hardware/Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://app.xiaomi.com/" target="_blank">http://app.xiaomi.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>7</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/vivo.png"></td>
+					<td>VIVO App Store</td>
+					<td><span class="aic-index">MAU: </span> 4.33%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: VIVO应用商店</p>
+						<p>Parent Company: BBK Electronics</p>
+						<p>Company Type: Mobile Hardware/Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="https://dev.vivo.com.cn/doc/products/pc/index.html" target="_blank">https://dev.vivo.com.cn/doc/products/pc/index.html</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>8</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/sogou.png"></td>
+					<td>Sogou Mobile Assistant</td>
+					<td><span class="aic-index">MAU: </span> 3.32%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 搜狗手机助手</p>
+						<p>Parent Company: Sogou</p>
+						<p>Company Type: Internet Search Engine/Software</p>
+						<p>Special Requirements: Must submit Software Copyright Certificate.</p>
+						<p>Official Website: <a href="http://zhushou.sogou.com/" target="_blank">http://zhushou.sogou.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>9</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/pp.png" class="img5"></td>
+					<td>PP Assistant</td>
+					<td><span class="aic-index">MAU: </span> 1.75%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: PP助手</p>
+						<p>Parent Company: Alibaba</p>
+						<p>Company Type: Online Services</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="https://www.25pp.com/android/" target="_blank">https://www.25pp.com/android/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>10</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/wandoujia.png"></td>
+					<td>Wandoujia</td>
+					<td><span class="aic-index">MAU: </span> 1.37%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 豌豆荚</p>
+						<p>Parent Company: Alibaba</p>
+						<p>Company Type: Online Services</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://www.wandoujia.com/apps" target="_blank">http://www.wandoujia.com/apps</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>11</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/meizu.png"></td>
+					<td>Meizu Flyme</td>
+					<td><span class="aic-index">MAU: </span> 0.95%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 魅族应用中心</p>
+						<p>Parent Company: Meizu</p>
+						<p>Company Type: Mobile Hardware/Software</p>
+						<p>Special Requirements: Must submit Software Copyright Certificate.</p>
+						<p>Official Website: <a href="http://app.meizu.com/" target="_blank">http://app.meizu.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>12</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/lenovo.png"></td>
+					<td>Lenovo Le Store</td>
+					<td><span class="aic-index">MAU: </span> 0.73%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 乐商店</p>
+						<p>Parent Company: Lenovo</p>
+						<p>Company Type: Mobile Hardware/Software</p>
+						<p>Special Requirements: Must submit Software Copyright Certificate.</p>
+						<p>Official Website: <a href="http://www.lenovomm.com/index_app.html" target="_blank">http://www.lenovomm.com/index_app.html</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>13</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/himarket.png"></td>
+					<td>HiMarket</td>
+					<td><span class="aic-index">MAU: </span> 0.73%</td>
+					<td class="neutral">-</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 安卓市场</p>
+						<p>Parent Company: Baidu</p>
+						<p>Company Type: Internet Search Engine/Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://apk.hiapk.com/" target="_blank">http://apk.hiapk.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>14</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/2345.png"></td>
+					<td>2345 Mobile Assistant</td>
+					<td><span class="aic-index">MAU: </span> 0.48%</td>
+					<td class="positive">1▲</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 2345手机助手</p>
+						<p>Parent Company: 2345</p>
+						<p>Company Type: Internet Search Engine/Software</p>
+						<p>Special Requirements: Only upload apps through paid partnership.</p>
+						<p>Official Website: <a href="http://zhushou.2345.com/" target="_blank">http://zhushou.2345.com/</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>15</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/anzhi.jpg"></td>
+					<td>Anzhi Market</td>
+					<td><span class="aic-index">MAU: </span> 0.44%</td>
+					<td class="negative">1▼</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 安智市场</p>
+						<p>Parent Company: Anzhi</p>
+						<p>Company Type: Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://www.anzhi.com/applist.html" target="_blank">http://www.anzhi.com/applist.html</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>16</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/gionee.png"></td>
+					<td>Gionee Software Store</td>
+					<td><span class="aic-index">MAU: </span> 0.41%</td>
+					<td class="new">NEW</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 金立软件商店</p>
+						<p>Parent Company: Gionee</p>
+						<p>Company Type: Mobile Hardware/Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://www.appgionee.com/apps-1-0/" target="_blank">http://www.appgionee.com/apps-1-0/</a></p>
+					</td>
+				</tr>
+
+				<tr onclick="selectRow(this)">
+					<td>17</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/coolmart.png"></td>
+					<td>Coolmart</td>
+					<td><span class="aic-index">MAU: </span> 0.36%</td>
+					<td class="new">NEW</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 酷派应用商店</p>
+						<p>Parent Company: Coolpad</p>
+						<p>Company Type: Mobile Hardware/Software</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://www.coolmart.net.cn/#app" target="_blank">http://www.coolmart.net.cn/#app</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>18</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/telecom.png"></td>
+					<td>China Telecom 189 Store</td>
+					<td><span class="aic-index">MAU: </span> 0.15%</td>
+					<td class="negative">2▼</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 中国电信天翼空间</p>
+						<p>Parent Company: China Telecom</p>
+						<p>Company Type: Telecommunications</p>
+						<p>Special Requirements: Only upload apps through revenue share directly with developers.</p>
+						<p>Official Website: <a href="https://www.189store.com/index/toMkt?type=1" target="_blank">https://www.189store.com/index/toMkt?type=1</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>19</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/googleplay.png"></td>
+					<td>Google Play</td>
+					<td><span class="aic-index">MAU: </span> 0.15%</td>
+					<td class="negative">2▼</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 谷歌应用商店</p>
+						<p>Parent Company: Google</p>
+						<p>Company Type: Internet Search Engine/Software/Hardware</p>
+						<p>Special Requirements: N/A</p>
+						<p>Official Website: <a href="http://play.google.com/store" target="_blank">http://play.google.com/store</a></p>
+					</td>
+				</tr>
+				<tr onclick="selectRow(this)">
+					<td>20</td>
+					<td><img class="logostore" data-src="https://www.appinchina.co/images/stores/mm.png"></td>
+					<td>China Mobile MM Store</td>
+					<td><span class="aic-index">MAU: </span> 0.11%</td>
+					<td class="negative">1▼</td>
+				</tr>
+				<tr class="market-details">
+					<td colspan="5">
+						<p>Chinese Name: 中国移动MM应用商场</p>
+						<p>Parent Company: China Mobile</p>
+						<p>Company Type: Telecommunications</p>
+						<p>Special Requirements: Only upload apps through revenue share directly with developers.</p>
+						<p>Official Website: <a href="http://mm.10086.cn/store" target="_blank">http://mm.10086.cn/store</a></p>
+					</td>
+				</tr>
+
+			</table>
+			<h3 class="itallic-label bottom-label">* Data sourced from <a href="https://www.talkingdata.com/" target="_blank">TalkingData</a></h3>
+		</div>		
+		<div id="marketForm">
+			<div class="flex content">
+				<div class="align-center">
+					<div class="title-with-line">
+						<h1>Secure Placement</h1>
+					</div>
+					<p>Want to get placement on these app stores?</p>
+					<form class="vertical-form with-border"  onsubmit="return sendForm('marketForm')">
+						<input type="text" name="name" placeholder="Name *" required/>
+						<input type="email" name="email" placeholder="Email *" required/>
+						<select name="service">
+							<option value="Not selected" disabled selected>Select Service</option>
+							<option value="Information">Information</option>
+							<option value="Distribution">Distribution</option>
+							<option value="Acquisition">User Acquisition</option>
+							<option value="Other">Other</option>
+						</select>
+						<textarea name="message" placeholder="Message *" required onkeyup="textareaChanged()"></textarea>
+						<p id="formErrorMessage">The message should be at least 40 characters.</p>
+						<button type="submit">Submit</button>
+					</form>
+					<p class="information hidden invisible">We got your message and will contact you back within 2 working days.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="flex">
+			<a href="http://facebook.com/appinchina" target="_blank">
+				<img src="https://www.appinchina.co/images/facebook-logo.png"/>
+			</a>
+			<a href="http://twitter.com/appinchina" target="_blank">
+				<img src="https://www.appinchina.co/images/twitter-logo.png"/>
+			</a>
+			<a href="http://linkedin.com/company/3742839/" target="_blank">
+				<img src="https://www.appinchina.co/images/linkedin-logo.png"/>
+			</a>
+		</div>
+		<p>© 2018 AppInChina™
+			<a href="/privacy-policy" class="action-redirect">Privacy Policy</a>
+		</p>
+	</footer>
+	<script type="text/javascript" id="SW-05b84440-4b11-4377-9c0a-8996bbf42fea"></script>
+	<script src="../../js/main.js"></script>
+<!-- LinkedIn Pixel Code -->
+<script type="text/javascript">
+_linkedin_data_partner_id = "294682";
+</script><script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="LinkedIn" title="LinkedIn" src="https://dc.ads.linkedin.com/collect/?pid=294682&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Pixel Code -->
+<!-- Facebook Pixel Code -->
+<script>
+ !function(f,b,e,v,n,t,s)
+ {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+ if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+ n.queue=[];t=b.createElement(e);t.async=!0;
+ t.src=v;s=b.getElementsByTagName(e)[0];
+ s.parentNode.insertBefore(t,s)}(window, document,'script',
+ 'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '178263672818013');
+ fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+ src="https://www.facebook.com/tr?id=178263672818013&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Global site tag (gtag.js) - Google AdWords: 825668528 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-825668528"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-825668528');
+</script>
+<!-- End Global site tag (gtag.js) - Google AdWords: 825668528 -->
+<script type="text/javascript">
+// --------> mouseflow
+window._mfq = window._mfq || [];
+(function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.async = true;
+    mf.src = "//cdn.mouseflow.com/projects/e6bc91a0-14ab-40f7-a817-e4c1d90b7e24.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+})();
+// --------> saleswings
+!function(){function a(){var a=document.createElement("script");a.type="text/javascript",a.async=1,a.src="//go.saleswingsapp.com/assets/javascripts/sw/05b84440-4b11-4377-9c0a-8996bbf42fea?enableFormTracker=true";var b=document.getElementById("SW-05b84440-4b11-4377-9c0a-8996bbf42fea");b.parentNode.insertBefore(a,b)}window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,0);window.attachEvent?window.attachEvent("onhashchange",a):window.addEventListener("hashchange",a,0);}();
+// --------> identick
+window.identick = '45'
+!function(i,d,e,n,t,c,k){i.Identick=e;i[e]||(i[e]=function(){
+(i[e].q=i[e].q||[]).push(arguments)});i[e].l=+new Date;c=d.createElement(n);
+k=d.getElementsByTagName(n)[0];c.src=t;k.parentNode.insertBefore(c,k)}
+(window,document,'idntk','script','//cdn.identick.com/intel.js');
+console.log("finished loading HTML")
+</script>
+
+<!-- Yahoo Pixel Code -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"25013923"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+<!-- End Yahoo Pixel Code -->
+<!-- Bing Pixel Code -->
+<script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10000','properties':{'pixelId':'10061744'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>
+<!-- End Bing Pixel Code -->
+
+</body>
+</html>

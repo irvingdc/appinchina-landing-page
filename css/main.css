@@ -346,7 +346,7 @@ nav+ul li {
 }
 
 nav+ul li a {
-    padding: 20px 15px;
+    padding: 15px;
 }
 
 nav+ul li>a,
@@ -367,8 +367,8 @@ nav+ul li>div {
 nav+ul li>div span {
     display: block;
     position: absolute;
-    width: 182px;
-    transform: translateX(-30%);
+    width: 120px;
+    transform: translateX(-25%);
     background: white;
     top: 60px;
     border-radius: 4px;
@@ -376,6 +376,7 @@ nav+ul li>div span {
     transition: all 0.3s;
     transition-delay: 0.1s;
     visibility: hidden;
+    font-size: 13px;
     opacity: 0;
 }
 
@@ -1658,7 +1659,7 @@ div#contact span p {
 }
 
 .grid.team {
-    grid-template-columns: 160px 160px 160px 160px 160px 160px;
+    grid-template-columns: 160px 160px 160px 160px 160px;
     grid-gap: 20px 15px
 }
 
